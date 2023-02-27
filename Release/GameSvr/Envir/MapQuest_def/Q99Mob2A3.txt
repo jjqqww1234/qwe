@@ -1,0 +1,33 @@
+; =============================
+; QGO Easter Event 2003
+; 9 Apr 2003 - xA3 Mob function
+; =============================
+[@main]
+
+#IF
+check [783] 1
+#ACT
+break
+
+#IF
+check [782] 0
+#ACT
+break
+
+#IF
+check [781] 0
+#ACT
+break
+
+;
+; Players Have killed all previous in sequence
+;
+#IF
+random 5
+check [772] 1
+#ACT
+SET [783] 1
+give GoldNecklace 1
+#SAY
+The monster dies, and as it falls, a Necklace lands \
+into your bag. \ \

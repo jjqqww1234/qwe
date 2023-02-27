@@ -1,0 +1,37 @@
+1/4  Gold  250
+1/5000 Gold  500
+
+1/20000   StaminaAid
+1/20000   MagicAid
+
+1/10  (HP)DrugSmall
+1/20  (MP)DrugSmall
+1/50  SunPotion
+
+1/2200   Lightning
+1/6600   Revelation
+1/2200   BlessedArmor
+1/2200   Thrusting
+1/2200   FireWall
+1/2200   SoulShield
+1/2200   FireBang
+1/2200   MassHiding
+
+1/1100   Poisoning
+1/1100   Slaying
+1/1100   Hiding
+1/1100   GreatFball
+1/1100   SummonSkel
+1/1100   Teleport
+1/1100   SoulFireball
+1/1100   Thunderbolt
+1/1100   Hellfire
+1/1100   ElecShock
+
+1/600   Repulsion
+1/600   SpiritSword
+1/600   Fireball
+1/600   Healing
+1/600   Fencing
+
+

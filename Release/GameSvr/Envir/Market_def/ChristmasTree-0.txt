@@ -1,0 +1,20 @@
+; ===================================
+; Npc Def NPC File : ChristmasTree-0
+; 
+; -----------------------------------
+; Name: ChristmasTree
+; Job: 
+; Map No: 0
+; Pos X 
+; Pos Y 
+; File name: *removed*
+; Comment: 
+
+;================================================= =
+;
+
+[@main]
+#SAY
+MERRY CHRISTMAS from Legend Of Mir Staff.\
+<Close/@exit>
+

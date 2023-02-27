@@ -1,0 +1,21 @@
+; QGO Easter Event 2003
+; Easter Dove Function
+[@main]
+
+#IF
+check [779] 1
+#ACT
+break
+
+#IF
+random 10
+check [770] 1
+#ACT
+SET [779] 1
+give T 1
+#SAY
+The fluttering of wings slowly \
+ceases and, as it falls to the \
+ground, it manages to give you \
+something. \ \
+

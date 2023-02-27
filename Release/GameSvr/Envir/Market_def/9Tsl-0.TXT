@@ -1,0 +1,40 @@
+[@main]
+#IF
+checkpkpoint 2
+#SAY
+I don't want to deal with such an evil person like you.. \ \
+<close/@exit>
+#ELSEACT
+goto @main-1
+
+[@main-1]
+The ferry to Prajna island will depart soon \
+Passengers, please board the ship. \ \
+ <Pay 2000 gold and board/@toBanya> \
+ <talk/@talk>
+[@toBanya]
+#IF
+checkgold 2000
+#ACT
+take gold 2000
+mapmove 5 124 353
+#ELSESAY
+You haven't got enough money. \
+Please check how much you have. \ \
+ <close/@exit>
+
+[@talk]
+#IF
+random 2
+#SAY
+We are under easy sail so we will arrive the island soon. \
+By the way, the fare is 2000 gold. \ \
+ <back/@main>
+
+
+#ELSESAY
+Prajna Island is full of rampaging monsters. \
+Some braves may take this opportunity to boost and raise \
+their reputation and fame but for the locals, 
+it ain't nothing but just hell.\ \
+ <back/@main>

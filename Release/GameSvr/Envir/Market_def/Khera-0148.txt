@@ -1,0 +1,370 @@
+; ===================================
+; Npc Def NPC File : Khera-0148
+; 
+; -----------------------------------
+; Name: Khera
+; Job: 
+; Map No: 0148
+; Pos X 10
+; Pos Y 9
+; File name: *removed*
+; Comment: 
+
+;================================================= =
+;
+
+[@main]
+#IF
+CHECKLEVEL 50
+#ACT
+goto @level50check
+break
+#ELSESAY
+Hello <$USERNAME>, Hunting much nowadays?\
+I plan to redecorate this Tavern soon\ \
+<Close/@exit>
+
+[@level50check]
+#IF
+CHECK [300] 1
+#ACT
+goto @level50part15
+break
+
+#IF
+CHECK [209] 1
+#ACT
+goto @level50part12complete
+break
+
+#IF
+CHECK [208] 1
+#ACT
+goto @level50part14-3
+break
+
+#IF
+CHECK [207] 1
+#ACT
+goto @level50part14
+break
+
+#IF
+CHECK [206] 1
+#ACT
+goto @level50part12complete
+break
+
+#IF
+CHECK [205] 1
+#ACT
+goto @level50part12-2
+break
+
+#IF
+CHECK [204] 1
+#ACT
+goto @level50part12
+break
+
+#IF
+CHECK [194] 1
+#ACT
+goto @level50part3-194
+break
+
+#IF
+CHECK [302] 1
+#ACT
+goto @level50part3repeat
+break
+
+#IF
+CHECK [193] 1
+#ACT
+goto @level50part3
+break
+
+#IF
+CHECK [192] 1
+#ACT
+goto @level50part2
+break
+
+#IF
+CHECK [191] 1
+#ACT
+goto @level50part2
+break
+
+#IF
+CHECK [190] 1
+#ACT
+goto @level50part1
+break
+#ELSESAY
+Hello <$USERNAME>, Hunting much nowadays?\
+I plan to redecorate this Tavern soon\ \
+<Close/@exit>
+
+[@level50part1]
+#ACT
+SET [191] 1
+#SAY
+Jason asked my well-being? He admires my cooking skills?\
+I'm not famous at all. I'm just a little better at extracting\
+the original flavor from Meat than others.\
+Well... some time ago, the 'Butcher Kim' of Bichon used\
+to come here all the time, asking me to teach her how to\
+cook so well, offering me all the money I want.\
+I wonder how he is these days... Tell Jason that I am doing great.\ \
+Butcher Kim in Bichon? Anyway I should go to <Jason/@exit>.
+
+[@level50part2]
+#SAY
+Tell Jason that I am doing well. \ \ \ \ \
+End the <conversation/@exit>.
+
+[@level50part3]
+#SAY
+You must be the person who was here last time!\
+Yo ho... Welcome!\ \ \ \
+Talk to <Khera/@level50part3-2>
+
+[@level50part3-2]
+#IF
+CHECKITEM KimsMeatSoup 1
+#SAY
+Oh Meat Soup... used to be my husband's favorite...\
+He said it was the best thing I cook and used to eat several bowls\
+in a blink of an eye...\ \
+<Hand over/@level50part3-3> the meat soup.
+#ELSESAY
+You have lost the Meat Soup
+
+[@level50part3-3]
+#IF
+CHECKITEM KimsMeatSoup 1
+#ACT
+TAKE KimsMeatSoup 1
+SET [302] 1
+#SAY
+I used to have a reliable and dependable husband.\
+He was a natural born businessman and used to travel\
+here and there with a cart to trade goods.\
+Although he was not very talkative, when he returned home\
+from work, he always came with precious Silk, Spice,\
+Hair pins, etc in his arms. He took good care of me,\
+although I was still a young girl back then. \ \
+<Listen/@level50part3-4> to the story
+#ELSESAY
+You have lost the Meat Soup
+
+[@level50part3-4]
+#SAY
+This dress was also a gift from him. He told me that\
+it was a brand new and expensive dress just delivered\
+to the Bichon Drapery. Then one day.. He usually left\
+home with his cart and few weeks later his wherabouts\
+became unknown. By the time he went missing it wasn't\
+even half a year since we got married.\
+Can you imagine how a newlywed girl would feel? \ \
+<Listen/@level50part3-5> to the story.
+
+[@level50part3-5]
+#SAY
+I kept looking for him for a long time...\
+But until now, I have been living on my own, not even\
+knowing whether he is still alive or not.\
+Ah, Only if I could know that he is alive...\ \ \ \
+"Hmmm, May I help you find your <husband?/@level50part3-6>"
+
+[@level50part3-6]
+#SAY
+Yes! He told me that there is a big job around the Sabuk wall.\
+So he took the biggest cart with him when he left.\
+I still clearly remember that he was waving me off,\
+when he was leaving...\
+Oh! Speaking of the cart... three years ago, a man told\
+me that he lost his way around Sabuk wall and\
+while wandering around, he saw a broken cart... Could it be?!\ \
+"Do you remember <his name?/@level50part3-7>"
+
+[@level50part3-7]
+#SAY
+It was quite a long time ago, but wait!...\
+I think he said that he was going to the Tao Village!\ \ \
+"Then I'll try to look for <him!/@level50part3-8>"
+
+[@level50part3-8]
+#ACT
+SET [194] 1
+Give Chrysanthemum 1
+#SAY
+Here you go, I have a favor to ask from you.\
+With any luck, if you can find my husbands corpse\
+sob... I can't possibly... see him like that...\
+On behalf of me, will you place this 'Chrysanthemum' next to him?\ \
+Take the 'Chrysanthemum' with <care./@exit>.
+
+[@level50part12]
+#IF
+CheckItem MilfordsBox 1
+#ACT
+Take MilfordsBox 1
+SET [205] 1
+#SAY
+Hmm the red dress means...\
+The dress I'm wearing right now...\
+I was wearing this dress until now to let him know who I am\
+since so much time has passed...\
+Indeed, my husband was...sob...\ \
+<Wait/@level50part12-2> until she stops crying.
+#ELSESAY
+You lost Milfords Box.
+
+[@level50part12-2]
+#SAY
+Well... at least tell me where the broken cart was.\
+I want to look for the things he left behind.\ \
+( It's too dangerous for this woman to go there by herself. )\ \
+( Ok no choice... <Make up an excuse./@level50part12-3> )
+
+[@level50part12-3]
+#SAY
+Hmmm... you got there coincidentally after a sandstorm...\
+I was hoping that I could find something, maybe a piece of\
+cloth that was on his body...\
+Ahh... I can't help it...\ \ \
+" You should look for a good <match/@level50part12-4>..."
+
+[@level50part12-4]
+#SAY
+Thank you but I can live on my own...\
+I appreciate what you have done for me.\
+And... it's so small for a reward, but...\ \
+<Take/@level50part12-5> what she gives to you with care.
+
+[@level50part12-5]
+#IF
+checkjob warrior
+#ACT
+goto @level50part12warrior
+break
+#ELSEACT
+goto @level50checkjobmore
+break
+
+[@level50checkjobmore]
+#IF
+checkjob wizard
+#ACT
+goto @level50part12wizard
+break
+#ELSEACT
+goto @level50part12taoist
+break
+
+[@level50part12warrior]
+#ACT
+SET [206] 1
+Give DCStone(XL) 1
+#SAY
+I wanted to give this to my husband for our anniversary.\
+But I hope that it will be of use to you.\
+Drop by sometime, if you are around.\ \ \
+( <Go and see/@exit> Milford. )
+
+[@level50part12wizard]
+#ACT
+SET [206] 1
+Give MCStone(XL) 1
+#SAY
+I wanted to give this to my husband for our anniversary.\
+But I hope that it will be of use to you.\
+Drop by sometime, if you are around.\ \ \
+( <Go and see/@exit> Milford. )
+
+[@level50part12taoist]
+#ACT
+SET [206] 1
+Give TaoStone(XL) 1
+#SAY
+I wanted to give this to my husband for our anniversary.\
+But I hope that it will be of use to you.\
+Drop by sometime, if you are around.\ \ \
+( <Go and see/@exit> Milford. )
+
+[@level50part12complete]
+#SAY
+Hello again <$USERNAME>, it's great to see you again\
+I keep having dreams about my husband...\ \
+How is your hunting going?\
+<Good/@exit> thank you.
+
+[@level50part14]
+#IF
+Checkitem SewingGoods 1
+#SAY
+What should I do...\
+It's not easy to take out the key inside the dress.\ \
+(It seems some kind of a tool to mend the dress is needed. )\
+(Ah! I have my sewing goods! )\ \
+( Hand over the <sewing goods/@level50part14-2> )
+#ELSESAY
+What should I do...\
+It's not easy to take out the key inside the dress.\ \
+(It seems some kind of a tool to mend the dress is needed. )\ \ \
+<Close/@exit>
+
+[@level50part14-2]
+#ACT
+SET [208] 1
+#SAY
+Oh... What will I do without you.\
+Thank you.\ \
+(She found the key and is now opening the box. )\ \
+(I may visit her some other <time/@level50part14-3>)
+
+[@level50part14-3]
+#SAY
+A grand precioud jewel and my husband's letter from the\
+jewelry box you gave to me.\
+He never wrote one to me before...\
+(She smiled)...Owing to you, I have a valuable treasure.\ \
+(It's good to see her <bright/@level50part14-4> )
+
+[@level50part14-4]
+#SAY
+Hmm?! This is?\ \
+It's a little token of my appreciation.\
+I hope you will find it useful for your journey.\
+Drop by sometime, if you have time.\ \
+End the <conversation/@endquest>
+
+[@endquest]
+#ACT
+Give GoldPatternBoots 1
+SET [209] 1
+break
+
+[@level50part15]
+Greetings...\
+You are not wandering around in this world tapped and alone, are you?\
+I hope you will find peace and happiness in the heavens...\ \ \
+End the <conversation/@exit>
+
+[@level50part3repeat]
+#SAY
+I used to have a reliable and dependable husband.\
+He was a natural born businessman and used to travel\
+here and there with a cart to trade goods.\
+Although he was not very talkative, when he returned home\
+from work, he always came with precious Silk, Spice,\
+Hair pins, etc in his arms. He took good care of me.\
+
+[@level50part3-194]
+#SAY
+It was quite a long time ago, but wait!...\
+I think he said that he was going to the Tao Village!\ \ \
+"Then I'll try to look for <him!/@exit>"

@@ -1,0 +1,92 @@
+; ===================================
+; Market Def NPC File : 4Bdu-0108
+; ReagentStore (BichonProvince)
+; -----------------------------------
+; Name: Larry
+; Job: 
+; Map No: 0108
+; Pos X 7
+; Pos Y 7
+; File name: *removed*
+; Comment: ReagentStore (BichonProvince)
+
+;================================================= =
+;
+
+;Settings
+%100
++0
++42
+
+[@main]
+#IF
+checkpkpoint 2
+#SAY
+I will not help an evil person like you..\ \
+<Ok/@exit>
+
+#ELSEACT
+goto @main-1
+
+
+[@main-1]
+Welcome. How can I help you?\ \
+<Buy/@buy> Drug\
+<Sell/@sell> Drug\
+<Talk with/@talkwith>\
+<Teleport Out/@Tmove>\
+<Cancel/@exit>
+
+
+[@Tmove]
+#IF
+random 2
+#ACT
+mapmove 0 326 289
+break
+
+#IF
+random 2
+#ACT
+mapmove 0 327 288
+break
+
+#ELSEACT
+goto @Tmove
+
+[@buy]
+Which item do you want to buy?\ \ \
+ <Back/@main>
+
+
+[@sell]
+Show me your item, I'll offer you a good price.\ \ \
+ <Back/@main>
+
+[@talkwith]
+#SAY
+Welcome <$USERNAME>, recently the town\
+was attacked by a great beast, who was found in the village.\ \
+<What can you tell me about Chinese medicine?/@about_her_doctor>\
+
+[@about_her_doctor]
+There is a famous medicine man who lives in the village of Ginko.\
+do you want a permit to practice Chinese madicine?\
+Then you must see him, he is easy to find.\
+You must go to the village of Ginko and find him.\ \
+<Ok/@exit>
+
+[goods]
+;Item		Amount		Time
+(HP)DrugSmall		200	1	
+(MP)DrugSmall		200	1
+(HP)DrugMedium		200	1
+(MP)DrugMedium		200	1
+(HP)DrugLarge		200	1
+(MP)DrugLarge		200	1
+(HP)SDrugBundl		200	1
+(MP)SDrugBundl		200	1
+(HP)MDrugBundl		200	1
+(MP)MDrugBundl		200	1
+(HP)DrugBundle		200	1
+(MP)DrugBundle		200	1

@@ -1,0 +1,63 @@
+; ===================================
+; Npc Def NPC File : Khin-0
+; 
+; -----------------------------------
+; Name: Khin
+; Job: 
+; Map No: 0
+; Pos X 
+; Pos Y 
+; File name: *removed*
+; Comment: 
+
+;================================================= =
+;
+
+[@main]
+#SAY
+Greetings stranger, my name is Khin and I'm the master\
+of the most famous guilds of this Town. I'm\
+currently looking for pumpkins to prepare my special dishes\
+for Halloween celebrations. If you'd like to help\
+you might want to look for those Jack'o'Lanterns in dungeons.\ \
+<What can I get in return for my help?/@next>\
+<Here are your pumpkins/@pumpkin>\
+<I don't care, sorry/@exit>
+
+[@next]
+#SAY
+If you can bring me the soul of one of those Jack'o'Lanterns\
+I can use my knowledge to prepare a special helmet for you. A\
+helmet made out of pumpkins and with the power given by the\
+restless soul of this monster. Wear it while hunting undead\
+monsters and you will get the chance to find some special items.\ \
+<I will look for your pumpkins/@look>\
+<I don't care, sorry/@exit>
+
+[@look]
+#SAY
+Oh thanks!\
+Bring me back at least 5 Pumpkins and a restless soul and I\
+will prepare the special Pumpkin Helmet for you!\ \ \ \
+<I will be back!/@exit>
+
+[@pumpkin]
+#IF
+checkitem Pumpkin 5
+checkitem RestlessSoul 1
+#ACT
+take Pumpkin 5
+take RestlessSoul 1
+give PumpkinHelmet
+#SAY
+Wow, thanks now I can prepare my dishes for Halloween celebration.\
+As I promised, I have prepared the special Pumpkin Helmet for you,\
+I wish you good luck with your new helmet. Come back and see me\
+whenever you like.\ \ \
+<Goodbye/@exit>
+#ELSESAY
+You don't have enough pumpkins for me. Please come back\
+when you have gathered at least 5 of them. Remember that\
+you also need to carry a Restless Soul with you!\ \ \
+<Goodbye/@exit>
+

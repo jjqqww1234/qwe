@@ -1,0 +1,1 @@
+DRAGON=Provider=SQLOLEDB.1;Password=code21;Persist Security Info=True;User ID=sa;Initial Catalog=LOM2Market;Data Source=DAMIAN-PC\SQLEXPRESS

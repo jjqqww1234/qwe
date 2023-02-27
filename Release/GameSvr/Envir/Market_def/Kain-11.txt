@@ -1,0 +1,136 @@
+; ===================================
+; Npc Def NPC File : Kain-11
+; 
+; -----------------------------------
+; Name: Kain
+; Job: 
+; Map No: 11
+; Pos X
+; Pos Y
+; File name: *removed*
+; Comment: 
+
+;================================================= =
+;
+
+[@main]
+#IF
+CHECKLEVEL 50
+#ACT
+goto @level50check
+#ELSESAY
+*He seems to be busy training*\
+<Close/@exit>
+
+[@normal]
+#SAY
+*He seems to be busy training*\
+<Close/@exit>
+
+[@level50check]
+#IF
+CHECK [200] 1
+#ACT
+goto @level50part8complete
+break
+
+#IF
+CHECK [199] 1
+#ACT
+goto @level50part8
+break
+
+#IF
+CHECK [197] 1
+#ACT
+goto @level50part6-7recheck
+break
+
+#IF
+CHECK [196] 1
+#ACT
+goto @level50part6
+break
+#ELSEACT
+goto @normal
+break
+
+[@level50part6]
+#SAY
+If its not urgent, please don't interrupt my training.\ \ \ \
+" Do you have experience of losing your way\
+around Sabuk wall in the <past?/@level50part6-2>"
+
+[@level50part6-2]
+#SAY
+What?!... How do you know that?!\ \ \ \ \
+"Didn't you see a 'broken cart' around <there?/@level50part6-3>"
+
+[@level50part6-3]
+#SAY
+Hmm?! Lets see... broken cart... that place?!\
+If you are thinking about going there, do me a favor.\ \ \
+"<What is it?/@level50part6-5>"
+
+[@level50part6-5]
+#SAY
+Well.. about three years ago, I was on a mission given\
+from Master Perry. I was supposed to deliver a precious\
+book from the Sabuk wall lord and I was on my way back to\
+Tao village.\
+Then one day... I lost my way in the midnight...\
+After hours of aimless wandering, I suddenly felt a chill.\
+When i raised my eyes, I saw a skull infront of me!\ \
+So what happened <then?/@level50part6-6>
+
+[@level50part6-6]
+#SAY
+After that I wandered in vain and couldn't think of anything.\
+Hurried back to Tao village and was severely scolded by Master Perry.\
+I tried to get back to the place again\
+but couldn't find the way...\
+Mmm... a mighty hero like you may be able to find the way...\ \
+"Was there any place you stayed on the <way?/@level50part6-7>"
+
+[@level50part6-7]
+#ACT
+SET [197] 1
+#SAY
+Lets see... After leaving Mongchon province and on my way to Sabuk wall,\
+I drank some water 'near the pond'...\
+Oh! I think I saw it while I was wandering around the pond.\
+If you get to find my book there by any chance,
+Please bring it to me. Please.\ \
+"Mmmm... where could that be... Anyway I'll memorize <that/@exit>"
+
+[@level50part6-7recheck]
+#SAY
+Please find my book. It was near the pond at Sabuk wall.\ \ \ \ \
+<I will/@close>
+
+[@level50part8]
+#IF
+CHECKITEM OldBook 1
+#SAY
+Ah! Welcome!\
+Did you find it?\ \ \ \
+<Hand over/@level50part8-2> the 'old book'.
+
+[@level50part8-2]
+#ACT
+SET [200] 1
+Take OldBook 1
+#SAY
+Thanks, sorry that you went through such trouble.\
+This is a little token of my appreciation.\ \ \ \
+" I'll gladly <take it/@level50part8-3> "
+
+[@level50part8-3]
+#ACT
+Give Gold 10000
+break
+
+[@level50part8complete]
+#SAY
+Greetings mighty hero, I trust you are well?\ \ \ \
+<Fine/@exit> thank you.

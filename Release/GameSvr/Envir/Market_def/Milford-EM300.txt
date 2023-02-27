@@ -1,0 +1,65 @@
+; ===================================
+; Npc Def NPC File : Milford-3
+; 
+; -----------------------------------
+; Name: Milford
+; Job: 
+; Map No: 3
+; Pos X 
+; Pos Y 
+; File name: *removed*
+; Comment: 
+
+;================================================= =
+;
+
+[@main]
+#IF
+CHECK [202] 1
+#ACT
+goto @level50part10-2
+break
+
+#IF
+CHECK [201] 1
+#ACT
+goto @level50part10
+break
+#ELSEACT
+break
+
+[@level50part10]
+#SAY
+This is where the 'King Centipede' is.\
+You can only leave this place when there is no\
+monsters left here.\
+Are you ready to fight now?\ \
+<I am ready/@level50part10-1>\ \
+<Give me some time/@exit>
+
+[@level50part10-1]
+#ACT
+SET [202] 1
+Param1 EM300
+Param2 14
+Param3 16
+MonGen KingCentipede 1
+break
+
+[@level50part10-2]
+#IF
+CHECKMONMAP EM300 1
+#SAY
+*The King Centipede (or other monster) has not been killed.*/ /
+<Close/@exit>
+#ELSESAY
+Wow... Thank you...\
+Although the centipede is dead, its venom is still around so please be careful.\
+I will take you out now. \ \ \
+<Grab his hand/@level50part10-3>
+
+[@level50part10-3]
+#ACT
+SET [203] 1
+mapmove 3 706 423
+break

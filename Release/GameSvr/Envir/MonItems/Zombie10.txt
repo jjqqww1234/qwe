@@ -1,0 +1,50 @@
+1/1    Gold 400
+
+1/10   Slaying
+1/10   Poisoning
+1/10   Hiding
+1/10   GreatFball
+1/10   SummonSkel
+1/10   Teleport
+1/10   SoulFireball
+1/10   Thunderbolt
+1/10   Hellfire
+1/10   ElecShock
+
+1/2   Repulsion
+1/2   SpiritSword
+1/2   Fireball
+1/2   Healing
+1/2   Fencing
+
+1/5   HoockedSword
+1/5   Scimitar
+1/5   Trident
+1/5   SteelSword
+1/5   BlueRing
+1/5   NagaNecklace
+1/5   AmberNecklace
+1/5   PhoenixBead
+1/5   HardGlove
+1/5   MagicBracelet
+1/5   LanternNeckl
+
+1/3    IronSword
+1/3    ShortSword
+1/3    BronzeHelmet
+1/3    LightArmor(M)
+1/3    LightArmor(F)
+1/3    BronzeAxe
+1/3    EbonyNecklace
+1/3    YellowNecklace
+1/3    BlackNecklace
+1/3    MagicHelmet
+
+1/2    (HP)DrugMedium
+1/2    (HP)DrugMedium
+1/2    (HP)DrugMedium
+1/2    (HP)DrugMedium
+1/2    (MP)DrugMedium
+1/2    (MP)DrugMedium
+1/2    (MP)DrugMedium
+1/2    (MP)DrugMedium

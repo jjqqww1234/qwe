@@ -1,0 +1,107 @@
+; ===================================
+; Market Def NPC File : 2Giwe-B342
+; (CastleGi-Ryoong)
+; -----------------------------------
+; Name: Gerald
+; Job: 
+; Map No: B342
+; Pos X 12
+; Pos Y 10
+; File name: *removed*
+; Comment: (CastleGi-Ryoong)
+
+;================================================= =
+;
+
+;Settings
+%100
++5
++6
++43
+
+[@main]
+#IF
+checkpkpoint 2
+#SAY
+I will not help an evil person like you..\ \
+<Ok/@exit>
+
+#ELSEACT
+goto @main-1
+
+
+[@main-1]
+My shop only sells top quality weapons.\
+So which one would you like to buy?\ \
+<buy/@buy> weapon\
+<sell/@sell> weapon\
+<repair/@repair> weapon\
+<talk/@talk> with Gerald\
+<move/@Tmove> outside\
+<close/@exit>
+
+[@Tmove]
+#IF
+random 3
+#ACT
+mapmove 4 217 238
+break
+
+#IF
+random 3
+#ACT
+mapmove 4 217 239
+break
+
+#IF
+random 3
+#ACT
+mapmove 4 218 238
+break
+
+#ELSEACT
+goto @Tmove
+
+
+[@buy]
+You want to buy a weapon?\
+Hmmm, choose what you want.\
+I assure you they are all fine weapons....\
+<back/@main>
+
+[@sell]
+We will buy any weapon.\
+There won't be any rip-off or special but\
+only fair deal.\ \ \
+<back/@main>
+
+[@repair]
+If you do the normal repair, the durability\
+of the weapon will drop a bit.\
+So you still want that?\
+If you want the special repair, go to Wayne.\ \
+<back/@main>
+
+[~@repair]
+It seems in good condition now.\ \
+<Back/@main>
+
+[@talk]
+Castle Gi-Ryoong is built in an isolated area\
+but the traffic of trade goods is not so light here.\
+Considering it was originally built\
+for a purely military use,\
+It is lucky to have this degree of prosperity here.\
+However, we always lack the mineral ore to make weapons.\ \
+<back/@main>
+
+
+[goods]
+;Item		Amount		Time
+WoodenSword     100         	1
+BronzeSword	100		1 
+IronSword	100		1
+ShortSword 	100		1
+SteelAxe	100		1
+
+

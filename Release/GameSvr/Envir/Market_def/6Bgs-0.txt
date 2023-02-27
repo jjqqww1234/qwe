@@ -1,0 +1,28 @@
+; ===================================
+; Market Def NPC File : 6BGS-0
+; BichonProvince
+; -----------------------------------
+; Name: GoldSafe
+; Job: 
+; Map No: 0
+; Pos X 296
+; Pos Y 254
+; File name: *removed*
+; Comment: BichonProvince
+
+;================================================= =
+;
+
+;Settings
+%100
+
+
+[@main]
+How can I help you?\
+This is where you can keep your gold safe.\
+You will only be able to store a minimum of\
+1,000,000 Gold here call back again when i'm\
+ready todo business thanks.\ \
+<Close/@exit>
+
+

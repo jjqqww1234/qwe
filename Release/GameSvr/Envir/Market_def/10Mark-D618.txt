@@ -1,0 +1,102 @@
+[@main]
+#IF
+checklevel 33 
+#Act 
+breaktimerecall
+goto @main_1
+mov p1 0
+#ELSEACT
+goto @wronglvl
+
+[@main_1]
+My sister discovered a new inexplored area inside \
+Mir continent, home of a mighty creature that she\
+named MirKing. In this map, where powerful magical forces\
+gather together, she found a way to strenghten armours,\
+giving them new characteristics. \ \
+
+;Mio sorella ha scoperto una nuova parte inesplorata del\
+;continente di mir dimora di una potentissima creatura che\
+;lei ha chiamato mirking, in questa mappa pervasa da potenti forze\
+;magiche ha scoperto di poter incantare maggiormente \ 
+;le armature conferendogli nuove caratteristiche.\ \
+ <Next/@next>
+
+[@next]
+Unfortunately, MirKing found her in his realm and cursed her\
+to be held captive there... forever...\
+I have the power to bring you through teleport to her, but only\
+for a few minutes... Once there you will have to act faster\
+and find her, in order to have the chance to buy her armours.\ \
+
+;il problema è che il mirking ha avvertito la sua presenza e\
+;l'ha maledetta legandola alla sua dimora per sempre.\
+;Io ho il potere di teleportarti da lei per pochi minuti.\
+;Una volta li dovrai muoverti velocemente per cercarla ed avere\
+;così la possibilità di acquistare da lei queste armature.\ \
+ <Next/@next1>
+
+[@next1]
+Pay attention! MirKing realms is invaded by his minions.\
+They are very dangerous creature and they will do what they can\
+to prevent you reach my sister... \ \
+
+;Stai attento,la dimora del MirKing è piena dei suoi seguaci.\
+;Sono creature molto pericolose e possono impedirti di\
+;raggiungere mia sorella\\
+ <Next/@rightlvl>
+
+
+[@rightlvl]
+#IF
+#SAY
+Well, are you ready for this task? \
+Keep in mind that I can teleport you there only\
+for 5 minutes, after that you will be returned here.\
+Leaving you there for longer time may allow Mir King\
+to discover you and my involvment... I really fear the\
+consequencies!!!\ \
+
+;Bene, sei pronto a tentare l'impresa?\
+;Tieni presente che potrò teleportarti li solo per\
+;5 minuti dopo di che dovrò farti tornare indietro \
+;Se ti tenessi li per troppo tempo il MirKing potrebbe\
+;accorgersi della tua presenza e del mio ruolo nella cosa.\
+;Le conseguenze potrebbero essere disastrose........\\
+
+ <I'm ready!/@tele>\
+ <Uhm... not yet!/@exit>
+
+[@wronglvl]
+#IF
+#SAY
+I'm sorry, but the task I wish to offer you is too\
+dangerous... I suggest you to train more... If you\
+will try now, and someone discover you... you will\
+have no hope to stay alive.\
+Come back to me when you will be more powerful\ \
+
+;Mi dispiace ma quella che ti propongo è un'impresa molto rischiosa\
+;Ti consiglio di allenarti ancora per un po, se ti impegnassi\
+;ora e venissi scoperto non avresti speranze, torna da me \
+;quando avrai aumentato le tue capacità\\
+ <Close/@exit>
+
+
+[@tele]
+#IF
+checkhum F004 5
+#SAY
+Sorry you will have to wait a little... \
+There are already too much people trying \
+to reach my sister... The risk to be caught \
+is too high...\ \
+
+;Mi dispiace ma dovrai aspettare un po\
+;ci sono gia troppi player nella mappa e il rischio\
+;di venire scoperti diventa troppo alto\\ 
+ <Close/@exit>
+
+#ELSEACT
+TimeRecall 5
+map F004

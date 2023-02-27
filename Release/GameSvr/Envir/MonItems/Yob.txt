@@ -1,0 +1,11 @@
+1/4    Gold  50
+
+1/200    BaseDress(M)
+1/200    BaseDress(F)
+1/200    WoodenSword
+1/200    Dagger
+1/200    EbonySword
+1/200    GoldNecklace
+1/200    CopperRing
+1/200    IronBracer
+1/200    PrecisionNeckl

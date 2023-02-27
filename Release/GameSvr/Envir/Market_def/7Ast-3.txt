@@ -1,0 +1,57 @@
+; ===================================
+; Market Def NPC File : 7Ast-3
+; GroceryStore (SabukWall)
+; -----------------------------------
+; Name: Tony
+; Job: 
+; Map No: 3
+; Pos X 663
+; Pos Y 304
+; File name: *removed*
+; Comment: GroceryStore (SabukWall)
+
+;================================================= =
+;
+
+;Settings
+%100
++30
++3
++25
+
+[@main]
+I bet whatever you need is ready in this store!\
+Please find all items you may need\
+We offer a 20% discount to\
+<$OWNERGUILD>'s members by the order of <$LORD>,\
+Lord of this wall...\ \
+<Buy/@buy> item\
+<Sell/@sell> item\
+<Cancel/@exit>
+
+
+[@buy]
+We treat candles, amulets, scrolls, and repair oil etc.\
+By the way, TeleportHome can be used only by <$OWNERGUILD>'s members.\ \
+<Back/@main>
+
+[@sell]
+I have never seen a person like you who sells items...\ \
+Well, which item do you want to sell?\
+<Back/@main>
+
+
+[goods]
+;Item		Amount		Time
+Candle		200	1
+Torch		200	1
+DungeonEscape	200	1
+RandomTeleport	200	1
+TownTeleport    200     1
+TownTeBundl     200     1
+EscapeBundl	200	1
+RandomBundl	200	1
+Amulet		200	1
+Amulet(M)	200	1
+RepairOil	200	1
+TeleportHome	200	1

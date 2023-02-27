@@ -1,0 +1,37 @@
+[@main]
+#IF
+checkpkpoint 2
+#SAY
+I don't want to deal with such an evil person like you.. \ \
+<close/@exit>
+#ELSEACT
+goto @main-1
+
+[@main-1]
+Anyone wants to go to the mainland, please board. \
+Not so much time left for the departure. \ \
+ <pay 2000 gold/@toBanya> and board \
+ <talk with the sailor/@talk>
+
+[@toBanya]
+#IF
+checkgold 2000
+#ACT
+take Gold 2000
+mapmove 0 252 674
+#ELSESAY
+You haven't got enough money. Please check it again. \ \
+ <close/@exit>
+
+[@talk]
+#IF
+random 2
+#SAY
+Our ship might look old but she hasn't had one single accident \
+for 30 years. \ \
+ <back/@main>
+
+#ELSESAY
+Recently, many people have left their home due to the attacks \
+from the monsters. I'm so worried... \ \
+ <back/@main>

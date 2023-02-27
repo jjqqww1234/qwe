@@ -1,0 +1,29 @@
+; =======================================================================
+; QGO - Map Quest Definition File
+; -----------------------------------------------------------------------
+; Map   Flag     Cond   Monster             Wearing          Triggers
+; No    Check    Check  To Kill             This/These       This File
+; -----------------------------------------------------------------------
+
+;
+; -----------------------------------------------------------------------
+;RME Quest.
+
+12      [401]    1      RootSpider           *               Q1RootSpider
+
+D10031  [403]    1      BigApe               *               Q1BigApe
+D10032  [403]    1      BigApe               *               Q1BigApe
+D1004   [403]    1      BigApe               *               Q1BigApe
+D10051  [403]    1      BigApe               *               Q1BigApe
+D10052  [403]    1      BigApe               *               Q1BigApe
+D10053  [407]    1      RedEvilApe           *               Q1RedEvilApe
+D10071  [409]    1      RedmoonEvil1         EvilApeOil      Q1RedmoonEvil1
+D10054  [412]    1      GreyEvilApe          *               Q1GreyEvilApe
+D10062  [413]    1      RedmoonEvil          *               Q1RedmoonEvil2
+
+; -----------------------------------------------------------------------
+; Gambling House T140
+T140	[797]	 1	EvilSnake	     *		     Q9T140M1
+T140	[797]	 1	WhiteBoar	     *		     Q9T140M1
+T140	[797]	 1	EvilTongs	     *		     Q9T140M1
+T140	[797]	 1	BigApe		     *		     Q9T140M1

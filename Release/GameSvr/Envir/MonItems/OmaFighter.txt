@@ -1,0 +1,35 @@
+1/4   Gold 300
+
+1/600     IronSword
+1/600     ShortSword
+1/600     BronzeHelmet
+1/600     LightArmor(M)
+1/600     LightArmor(F)
+1/600     BronzeAxe
+1/600     EbonyNecklace
+1/600     YellowNecklace
+1/600     BlackNecklace
+1/600     MagicHelmet
+
+1/300      BronzeSword
+1/300      ThinBracelet
+1/300      GlassRing
+1/300      HexagonalRing
+1/300      LeatherGlove
+1/300      SilverBracelet
+1/300      SteelBracelet
+1/300      HornRing
+1/300      LargeBracelet
+
+1/100      BaseDress(M)
+1/100      BaseDress(F)
+1/100      WoodenSword
+1/100      Dagger
+1/100      EbonySword
+1/100      GoldNecklace
+1/100      CopperRing
+1/100      IronBracer
+1/100      PrecisionNeckl
+
+;;From Korea:6month_PatchOne
+1/300   SteelAxe

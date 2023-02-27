@@ -1,0 +1,5 @@
+1/4  Gold 100
+1/15  (HP)DrugSmall
+1/25  (MP)DrugSmall
+
+1/100  TownTeleport

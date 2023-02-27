@@ -1,0 +1,116 @@
+; ===================================
+; Market Def NPC File : 8Piac-B352
+; Jeweler (PrajnaIsland)
+; -----------------------------------
+; Name: Grace
+; Job: 
+; Map No: B352
+; Pos X 7
+; Pos Y 9
+; File name: *removed*
+; Comment: Jeweler (PrajnaIsland)
+
+;================================================= =
+;
+
+;Settings
+%100
++22
++23
+
+;Pkr Tag (NPC won't talk to Pkrs)
+[@main]
+#IF
+checkpkpoint 2
+#SAY
+I will not help such an evil person like you..\ \
+<Ok/@exit>
+
+#ELSEACT
+goto @main-1
+
+
+[@main-1]
+Tst,tst.. When Emily will grow up....\
+oh, Welcome Sir/Ma'am.\ \
+<buy/@buy>\
+<sell/@sell>\
+<repair/@repair>\
+<move outside/@Tmove>\
+<close/@exit>
+
+[@Tmove]
+#IF
+random 3
+#ACT
+mapmove 5 157 337
+break
+
+#IF
+random 3
+#ACT
+mapmove 5 158 338
+break
+
+#IF
+random 3
+#ACT
+mapmove 5 159 339
+break
+
+#ELSEACT
+goto @Tmove
+
+[@buy]
+There are many accessories.\
+Please take your time and have a look.\ \ \
+<back/@main>
+
+[@sell]
+The proce is up to the condition of the item\
+you want to sell.\
+Please show me what you want to sell.\ \ \
+<back/@main>
+
+[@repair]
+I'll throughly repair it, just show me.\ \ \
+<back/@main>
+
+[~@repair]
+It is repaired very well.\ \
+<back/@main>
+
+[goods]
+;Item		Amount		Time
+WhiteJadeRing		200	1
+CopperRing		200	1
+HexagonalRing		200	1
+GlassRing		200	1
+HornRing		200	1
+BlueRing		200	1
+BlackRing		200	1
+SerpentEyeRing		200	1
+PearlRing		200	1
+GoldRing		200	1
+ThinBracelet		200	1
+SilverBracelet		200	1
+IronBracer		200	1
+LargeBracelet		200	1
+SteelBracelet		200	1
+MonkBracelet		200	1
+EbonyBracelet		200	1
+MagicBracelet		200	1
+GoldNecklace		200	1
+AmberNecklace		200	1
+YellowNecklace		200	1
+EbonyNecklace		200	1
+BlackNecklace		200	1
+WarriorNecklce		200	1
+JadeNecklace		200	1
+LanternNeckl		200	1
+NagaNecklace		200	1
+PhoenixBead		200	1
+PlatinNecklace		200	1
+
+
+

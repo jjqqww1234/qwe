@@ -1,0 +1,16 @@
+1/1 Gold 1500
+
+1/5 (HP)DrugLarge
+1/5 (MP)DrugLarge
+
+1/500 MoralRing
+1/500 CharmRing
+1/500 BlueJadeNeckl
+1/1000 GoldBracelet
+1/3000 ExpelRing
+
+1/200  MassHiding
+1/250  BlessedArmor
+1/250  Lightning
+1/200  FireWall
+1/250  Thrusting

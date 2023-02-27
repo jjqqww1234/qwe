@@ -1,0 +1,480 @@
+; ===================================
+; Npc Def NPC File : NightRose-0
+; 
+; -----------------------------------
+; Name: NightRose
+; Job: 
+; Map No: 0
+; Pos X 
+; Pos Y 
+; File name: *removed*
+; Comment: 
+
+;================================================= =
+;
+
+[@main]
+#say
+Hi my name is Night Rose of charming Rose Family.\
+I came here to celebrate Legend of Mir2 5th year anniversary.\
+I greatly appreciate your constant passion. Thus, I've prepared 6\
+different types of major events and 3 cool mini events. If you wish\
+to read the details, don't hesitate to ask me anytime.\
+
+<6 major events information/@info>\
+<Enjoy 3 Cool events/@ent>\
+
+[@info]
+#say
+6 Major events info *\
+These are major events that we have prepared to celebrate 5th year\
+anniversary.\
+Click the event below to read detail.\
+
+<Master Hand Event/@Mj> <Hit the Jackpot Event Potion Discount Event/@pe> \
+<Daylight Event   Experience Event/@de>  <Guild War Event/@Guild> \
+
+<Back to main/@main> \
+
+[@mj]
+*Master Hand Event*\
+For the 5th anniversary, 'The master hand' who is the best craftsman\
+in Mir continent came here again. 'The master hand' is an outstanding\
+craftsman who can repair all the items. The repairing charge is more\
+expensive than normal cost. But it's worth the price.\
+If you have any items that you kept in warehouse,\
+use if at full during this period.\ \
+<Back/@info>   <Go to Main/@main>\
+
+[@pe]
+*Hit the Jackpot Event*\
+During this event, some special monsters will appear in all the regions.\
+If you just hit it once you can catch it.\
+Catch those Special Monsters and get valuable items.\ \
+
+*Potions Discount Event*\
+Celebrating 5th anniversary, PotionStore will give you a special\
+discount rate. During this Event, We offer 2/3 prices as usual.\
+
+<Back/@info>   <Go to Main/@main>\
+
+[@de]
+*DayLight Event*\
+During 5th anniversary event, daylight effect may occur anytime in the\
+whole area. It'll last all day long and will include dungeons as well.\
+
+*Experience event*\
+All the players will receive 1.5x exp. points for all the\
+monsters defeated during this anniversary event.\
+
+<Back/@info>   <Go to Main/@main>\
+
+[@guild]
+*Guild War Event*\
+Guild War Event will be held within this anniversary.\
+Please refer to the official website for further Information.\
+
+<Back/@info>   <Go to Main/@main>\
+
+[@ent]
+* enjoy 3 cool mini events *\
+We have prepared 3 cool mini events that have never been run\
+in Mir World before. These are going to be very exciting events\
+and you will miss them soon... so don't miss them!\
+Click the events below to read the details.\
+<EventBall Recipe Collection Event/@EB>\
+<Clone Event/@CE>\
+<Minigame Event/@ME>\
+<Back to main/@main>\
+
+[@CE]
+*Clone Event*\
+We have prepared a Special Clone Event.\
+You will need to pay a rental then you will have your clone character.\
+The clone character's ability depends on your level.\
+You can get it from my brothers. The clone character can be attacked\
+by town guards. Therefore my sisters are staying outside of the town.\
+The coordinates are BichonProvince(268:191),PrajnaIslnd(184:338)\
+CastleGi-Ryoong(273:242) and MongchonProvince(341:373).\
+<Back/@ent>  <Go to main/@main>\
+
+[@ME]
+We have 3 minigames : rock-paper-scissors,dice play,run for fireball.\
+You can play with "RoseMary"\
+You can hear more details from "RoseMary" as well.\ \
+
+<Back/@ent>  <Go to main/@main>\
+
+[@EB]
+*Recipe Collection Event*\ \
+Balls with letters on them are dropped by monsters all over the Mir world.\
+If you bring the balls that make a right word I will switch it to a gift.\
+Do you have balls right now?\
+<I want to know what kind of words you have/@let>\
+<I got balls with letters./@ball>\
+<I will get them to you/@exit>\
+
+[@let]
+EventBalls With letters (MIR2DOUGHNTLEF5AVSY)\
+are dropped by monsters. If you bring those balls with letters\
+that make a right word, I will switch it to an Event Item.\
+(1) MIR2\
+(2) DOUGHNUT\
+(3) LEGENDOFMIR\
+(4) 5THANNIVERSARY\
+(5) LEGENDOFMIR25THANNIVERSARY\
+<Back/@EB>  <Go to Main/@main>
+
+[@ball]
+Do you have balls with letters?\
+What Balls With letters you got for me?\
+<MIR2/@M2>\
+<I got DOUGHNUT/@D2>\
+<I got LEGENDOFMIR/@L2>\
+<I got 5THANNIVERSARY/@5th>\
+<I got LEGENDOFMIR2 5TH ANNIVERSARY/@A2>\ \
+<I will get them to you Again./@Exit>\
+
+[@M2]
+#IF
+checkitem EventBall(M) 1
+checkitem EventBall(I) 1
+checkitem EventBall(R) 1 
+checkitem EventBall(2) 1
+#ACT
+Take EventBall(M) 1
+Take EventBall(I) 1
+Take EventBall(R) 1
+Take EventBall(2) 1
+Give Fireworks 1
+#SAY
+Wow... you got them already? Here is the gift I promised.\
+Visit me anytime when you collect them again.\
+I will switch them to gift again.\
+Hope you enjoy 5th year anniversary event.\ \
+<I have balls to switch/@ball>\ \
+<Close/@exit>
+#ELSESAY
+Oh, it seems you dont have all of the balls with you.\
+No problem visit me again when you have.\ \
+<I have balls to switch/@ball>\ \
+<Close/@exit>
+
+[@D2]
+#IF
+checkitem EventBall(D) 1
+checkitem EventBall(O) 1
+checkitem EventBall(U) 1
+checkitem EventBall(G) 1
+checkitem EventBall(H) 1
+checkitem EventBall(N) 1
+checkitem EventBall(U) 1
+checkitem EventBall(T) 1
+#ACT
+Take EventBall(D) 1
+Take EventBall(O) 1
+Take EventBall(U) 1
+Take EventBall(G) 1
+Take EventBall(H) 1
+Take EventBall(N) 1
+Take EventBall(U) 1
+Take EventBall(T) 1
+Give TurbanShell 1
+#SAY
+Wow... you got them already? Here is the gift I promised.\
+Visit me anytime when you collect them again.\
+I will switch them to gift again.\
+Hope you enjoy 5th year anniversary event.\ \
+<I have balls to switch/@ball>\ \
+<Close/@exit>
+#ELSESAY
+Oh, it seems you dont have all of the balls with you.\
+No problem visit me again when you have.\ \
+<I have balls to switch/@ball>\ \
+<Close/@exit>
+
+[@L2]
+#IF
+checkjob warrior
+#ACT
+goto @tube
+#IF
+checkjob taoist
+#ACT
+goto @T2
+#IF
+checkjob wizard
+#ACT
+goto @W2
+
+[@T2]
+#IF
+checkitem EventBall(L) 1
+checkitem EventBall(E) 2
+checkitem EventBall(G) 1
+checkitem EventBall(N) 1
+checkitem EventBall(D) 1
+checkitem EventBall(O) 1
+checkitem EventBall(F) 1
+checkitem EventBall(M) 1
+checkitem EventBall(I) 1
+checkitem EventBall(R) 1
+#ACT
+goto @T2check
+#ELSESAY
+Oh, it seems you dont have all of the balls with you.\
+No problem visit me again when you have.\ \
+<I have balls to switch/@ball>\ \
+<Close/@exit>
+
+[@t2check]
+#IF random 2
+#ACT
+Take EventBall(L) 1
+Take EventBall(E) 2
+Take EventBall(G) 1
+Take EventBall(N) 1
+Take EventBall(D) 1
+Take EventBall(O) 1
+Take EventBall(F) 1
+Take EventBall(M) 1
+Take EventBall(I) 1
+Take EventBall(R) 1
+give TaoistTubeA 1
+#SAY
+Wow... you got them already? Here is the gift I promised.\
+Visit me anytime when you collect them again.\
+I will switch them to gift again.\
+Hope you enjoy 5th year anniversary event.\ \
+<I have balls to switch/@ball>\ \
+<Close/@exit>
+#ELSEACT
+Take EventBall(L) 1
+Take EventBall(E) 2
+Take EventBall(G) 1
+Take EventBall(N) 1
+Take EventBall(D) 1
+Take EventBall(O) 1
+Take EventBall(F) 1
+Take EventBall(M) 1
+Take EventBall(I) 1
+Take EventBall(R) 1
+give TaoistTubeB 1
+#ELSESAY
+Wow... you got them already? Here is the gift I promised.\
+Visit me anytime when you collect them again.\
+I will switch them to gift again.\
+Hope you enjoy 5th year anniversary event.\ \
+<I have balls to switch/@ball>\ \
+<Close/@exit>
+
+[@tube]
+#IF
+checkitem EventBall(L) 1
+checkitem EventBall(E) 2
+checkitem EventBall(G) 1
+checkitem EventBall(N) 1
+checkitem EventBall(D) 1
+checkitem EventBall(O) 1
+checkitem EventBall(F) 1
+checkitem EventBall(M) 1
+checkitem EventBall(I) 1
+checkitem EventBall(R) 1
+#ACT
+goto @tubecheck
+#ELSESAY
+Oh, it seems you dont have all of the balls with you.\
+No problem visit me again when you have.\ \
+<I have balls to switch/@ball>\ \
+<Close/@exit>
+
+[@tubecheck]
+#IF random 2
+#ACT
+Take EventBall(L) 1
+Take EventBall(E) 2
+Take EventBall(G) 1
+Take EventBall(N) 1
+Take EventBall(D) 1
+Take EventBall(O) 1
+Take EventBall(F) 1
+Take EventBall(M) 1
+Take EventBall(I) 1
+Take EventBall(R) 1
+give WarriorTubeA 1
+#SAY
+Wow... you got them already? Here is the gift I promised.\
+Visit me anytime when you collect them again.\
+I will switch them to gift again.\
+Hope you enjoy 5th year anniversary event.\ \
+<I have balls to switch/@ball>\ \
+<Close/@exit>
+#ELSEACT
+Take EventBall(L) 1
+Take EventBall(E) 2
+Take EventBall(G) 1
+Take EventBall(N) 1
+Take EventBall(D) 1
+Take EventBall(O) 1
+Take EventBall(F) 1
+Take EventBall(M) 1
+Take EventBall(I) 1
+Take EventBall(R) 1
+give WarriorTubeB 1
+#ELSESAY
+Wow... you got them already? Here is the gift I promised.\
+Visit me anytime when you collect them again.\
+I will switch them to gift again.\
+Hope you enjoy 5th year anniversary event.\ \
+<I have balls to switch/@ball>\ \
+<Close/@exit>
+
+[@W2]
+#IF
+checkitem EventBall(L) 1
+checkitem EventBall(E) 2
+checkitem EventBall(G) 1
+checkitem EventBall(N) 1
+checkitem EventBall(D) 1
+checkitem EventBall(O) 1
+checkitem EventBall(F) 1
+checkitem EventBall(M) 1
+checkitem EventBall(I) 1
+checkitem EventBall(R) 1
+#ACT
+goto @W2check
+
+[@W2check]
+#IF random 2
+#ACT
+Take EventBall(L) 1
+Take EventBall(E) 2
+Take EventBall(G) 1
+Take EventBall(N) 1
+Take EventBall(D) 1
+Take EventBall(O) 1
+Take EventBall(F) 1
+Take EventBall(M) 1
+Take EventBall(I) 1
+Take EventBall(R) 1
+give WizardTubeA 1
+#SAY
+Wow... you got them already? Here is the gift I promised.\
+Visit me anytime when you collect them again.\
+I will switch them to gift again.\
+Hope you enjoy 5th year anniversary event.\ \
+<I have balls to switch/@ball>\ \
+<Close/@exit>
+#ELSEACT
+Take EventBall(L) 1
+Take EventBall(E) 2
+Take EventBall(G) 1
+Take EventBall(N) 1
+Take EventBall(D) 1
+Take EventBall(O) 1
+Take EventBall(F) 1
+Take EventBall(M) 1
+Take EventBall(I) 1
+Take EventBall(R) 1
+give WizardTubeB 1
+#ELSESAY
+Wow... you got them already? Here is the gift I promised.\
+Visit me anytime when you collect them again.\
+I will switch them to gift again.\
+Hope you enjoy 5th year anniversary event.\ \
+<I have balls to switch/@ball>\ \
+<Close/@exit>
+
+[@5th]
+#IF
+checkitem EventBall(5) 1
+checkitem EventBall(th) 1
+checkitem EventBall(A) 2
+checkitem EventBall(N) 2
+checkitem EventBall(I) 1
+checkitem EventBall(V) 1
+checkitem EventBall(E) 1
+checkitem EventBall(R) 1
+checkitem EventBall(S) 1
+checkitem EventBall(R) 1
+checkitem EventBall(Y) 1
+#ACT
+Take EventBall(5) 1
+Take EventBall(th) 1
+Take EventBall(A) 2
+Take EventBall(N) 2
+Take EventBall(I) 1
+Take EventBall(V) 1
+Take EventBall(E) 1
+Take EventBall(R) 1
+Take EventBall(S) 1
+Take EventBall(R) 1
+Take EventBall(Y) 1
+Give LollyPop 1
+#SAY
+Wow... you got them already? Here is the gift I promised.\
+Visit me anytime when you collect them again.\
+I will switch them to gift again.\
+Hope you enjoy 5th year anniversary event.\ \
+<I have balls to switch/@ball>\ \
+<Close/@exit>
+#ELSESAY
+Oh, it seems you dont have all of the balls with you.\
+No problem visit me again when you have.\ \
+<I have balls to switch/@ball>\ \
+<Close/@exit>
+
+[@A2]
+#IF
+checkitem EventBall(L) 1
+checkitem EventBall(E) 3
+checkitem EventBall(G) 1
+checkitem EventBall(N) 3
+checkitem EventBall(D) 1
+checkitem EventBall(O) 1
+checkitem EventBall(F) 1
+checkitem EventBall(M) 1
+checkitem EventBall(I) 1
+checkitem EventBall(R) 2
+checkitem EventBall(2) 1
+checkitem EventBall(5) 1
+checkitem EventBall(Th) 1
+checkitem EventBall(A) 2
+checkitem EventBall(I) 1
+checkitem EventBall(V) 1
+checkitem EventBall(R) 1
+checkitem EventBall(S) 1
+checkitem EventBall(Y) 1
+#ACT
+Take EventBall(L) 1
+Take EventBall(E) 2
+Take EventBall(G) 1
+Take EventBall(N) 3
+Take EventBall(D) 1
+Take EventBall(O) 1
+Take EventBall(F) 1
+Take EventBall(M) 1
+Take EventBall(I) 1
+Take EventBall(R) 2
+Take EventBall(2) 1
+Take EventBall(5) 1
+Take EventBall(th) 1
+Take EventBall(A) 2
+Take EventBall(I) 1
+Take EventBall(V) 1
+Take EventBall(S) 1
+Take EventBall(R) 1
+Take EventBall(Y) 1
+give SouvenirGoldCoin 1
+#SAY
+Wow... you got them already? Here is the gift I promised.\
+Visit me anytime when you collect them again.\
+I will switch them to gift again.\
+Hope you enjoy 5th year anniversary event.\ \
+<I have balls to switch/@ball>\ \
+<Close/@exit>
+#ELSESAY
+Oh, it seems you dont have all of the balls with you.\
+No problem visit me again when you have.\ \
+<I have balls to switch/@ball>\ \
+<Close/@exit>

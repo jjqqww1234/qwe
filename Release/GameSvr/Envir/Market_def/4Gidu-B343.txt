@@ -1,0 +1,68 @@
+; ===================================
+; Market Def NPC File : 4Gidu-B343
+; 
+; -----------------------------------
+; Name: Murray
+; Job: 
+; Map No: B343
+; Pos X 12
+; Pos Y 16
+; File name: *removed*
+; Comment:
+
+;================================================= =
+;
+
+;Settings
+%100
++0
++42
+
+[@main]
+#IF
+checkpkpoint 2
+#SAY
+I will not help an evil person like you..\ \
+<Ok/@exit>
+
+#ELSEACT
+goto @main-1
+
+
+[@main-1]
+Caugh.. caugh..., welcome.\
+I'm to old to climb a mountain to collect herbs.\
+So i'm here just selling potions for a living.\
+See anything you want to buy?\ \
+<buy/@buy> drug\
+<sell/@sell> drug\
+<talk/@talk> with Murray\
+<move/@Tmove> outside\
+<close/@exit>
+
+[@buy]
+Which item do you want to buy?\ \ \
+<back/@main>
+
+
+[@sell]
+Show me your item, I'll offer you a good price.\ \ \
+<back/@main>
+
+[@talk]
+
+
+[goods]
+;Item		Amount		Time
+(HP)DrugSmall		200	1	
+(MP)DrugSmall		200	1
+(HP)DrugMedium		200	1
+(MP)DrugMedium		200	1
+(HP)DrugLarge		200	1
+(MP)DrugLarge		200	1
+(HP)SDrugBundl		200	1
+(MP)SDrugBundl		200	1
+(HP)MDrugBundl		200	1
+(MP)MDrugBundl		200	1
+(HP)DrugBundle		200	1
+(MP)DrugBundle		200	1

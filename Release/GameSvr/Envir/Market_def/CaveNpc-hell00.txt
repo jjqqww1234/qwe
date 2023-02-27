@@ -1,0 +1,33 @@
+; ===================================
+; Npc Def NPC File : CaveNpc-hell00
+; 
+; -----------------------------------
+; Name: 
+; Job: 
+; Map No: hell00
+; Pos X 246
+; Pos Y 144
+; File name: *removed*
+; Comment:
+
+;================================================= =
+;
+
+[@main]
+#SAY
+Welcome stranger this is the entrance to an evil cave\
+Have you got the HellNecklace from my brother\
+In BichonProvince at (341:258) if so you may enter\
+the cave, Oh and take great care.\ \
+<Enter the cave/@enter> <Leave/@exit>
+
+[@enter]
+#IF
+checkitem HellNecklace 1
+#ACT
+mapmove hell01 21 50
+#ELSESAY
+I'm sorry but you don't have the HellNecklace.\
+Please go and buy it from my brother\
+in BichonProvince (341:258).\ \
+<Leave/@exit>

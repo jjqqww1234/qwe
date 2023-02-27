@@ -1,0 +1,106 @@
+;Guard List
+;BichonProvince
+Guard   0        275, 212    : 7
+Guard   0        280, 207    : 7
+;동문
+Guard   0        409, 189    : 1
+Guard   0        403, 183    : 1
+;남문
+Guard   0        384, 326    : 3
+Guard   0        390, 320    : 3
+;서문
+Guard   0        282, 321    : 5
+Guard   0        276, 315    : 5
+;BichonCentre
+Guard   0        293, 251    : 5
+Guard   0        326, 208    : 5
+Guard   0        331, 213    : 5
+Guard   0        335, 255    : 5
+Guard   0        339, 259    : 5
+;BorderVillage
+Guard   0        276, 604    : 7
+Guard   0        280, 600    : 7
+;
+Guard   0        328, 604    : 1
+Guard   0        332, 608    : 1
+;
+Guard   0        281, 661    : 5
+Guard   0        277, 657    : 5
+;GinkoVillage
+Guard   0        618, 603    : 7
+Guard   0        626, 596    : 7
+Guard   0        662, 588    : 1
+;SerpentValley
+Guard   2        492,475     : 7
+Guard   2        484,482     : 7
+;MongchonProvince
+Guard   3        380,347     : 3
+Guard   3        364,363     : 3
+Guard   3        360,367     : 3
+Guard   3        373,354     : 3
+Guard   3        379,332     : 1
+Guard   3        342,361     : 3
+;몽촌현 북
+Guard   3        248,312     : 7
+Guard   3        253,307     : 7
+
+;TaoVillage
+Guard1  11       197,349     : 7
+Guard1  11       202,344     : 7
+
+Guard1  11       207,350     : 3
+Guard1  11       200,357     : 3
+
+Guard1  11       149,299     : 7
+Guard1  11       154,294     : 7
+
+Guard1  11       159,302     : 3
+Guard1  11       154,307     : 3
+
+Guard1  11       150,344     : 1
+Guard1  11       157,351     : 1
+
+Guard1  11       151,357     : 5
+Guard1  11       147,353     : 5
+
+Guard1  11       203,301     : 5
+Guard1  11       197,295     : 5
+
+Guard1  11       202,286     : 1
+Guard1  11       209,293     : 1
+
+
+;;Castle-Gi ------------> 02.11.13
+
+;성내
+Guard1   4        217, 209    : 3
+Guard1   4        228, 198    : 3
+;동문
+Guard1   4        260, 173    : 1
+Guard1   4        264, 176    : 1
+;남문
+Guard1   4        258, 250    : 3
+Guard1   4        262, 246    : 3
+;서문
+Guard1   4        189, 246    : 5
+Guard1   4        193, 250    : 5
+
+;;PrajnaIsland ----------
+
+Guard1   5        166, 287    : 1
+Guard1   5        172, 292    ; 7
+Guard1   5        189, 317    ; 3
+Guard1   5        183, 322    ; 3
+Guard1   5        170, 351    ; 4
+Guard1   5        163, 359    ; 2
+
+;;PastBichon ------------
+
+Sentry   6        88, 178     : 5
+Sentry   6        91, 181     ; 5
+Sentry   6        138, 181    ; 3
+Sentry   6        142, 177    ; 3
+Sentry   6        138, 124    ; 1
+Sentry   6        134, 121    ; 1
+
+

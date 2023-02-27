@@ -1,0 +1,64 @@
+; ===================================
+; Market Def NPC File : 7Pist-5
+; PrajnaIsland
+; -----------------------------------
+; Name: Bart
+; Job: 
+; Map No: 5
+; Pos X 148
+; Pos Y 352
+; File name: *removed*
+; Comment: PrajnaIsland
+
+;================================================= =
+;
+
+;Settings
+%100
++0
++42
++30
++3
++51
+
+[@main]
+Damn, more customers?...\
+If you want to buy something, do it quickly.\ \
+<buy/@buy>\
+<sell/@sell>\
+<talk with Bart/@talk>\
+<close/@exit>
+
+[@buy]
+Don't be so slow - buy quickly. I could miss the boat.\
+I may look flustered but don't even think of cheating me.\ \
+<back/@main>
+
+
+[@sell]
+Ok ok I got it. let me see what you've got.\
+Damn, my bag will get heavier.\ \
+<back/@main>
+
+[@talk]
+All sorts of cruel monsters have come near\
+our village, romping mercilessly. Business is\
+important but my life is more important. Don't you\
+think so?\ \
+<back/@main>
+
+
+[goods]
+;Item		Amount		Time
+Candle			200	1
+Torch			200	1
+DungeonEscape		200	1
+RandomTeleport		200	1
+TownTeleport            200     1
+EscapeBundl		200	1
+RandomBundl		200	1
+TownTeBundl             200     1
+Amulet			200	1
+Amulet(M)		200	1
+RepairOil		200	1
+UnknownOrb		200	1

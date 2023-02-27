@@ -1,0 +1,154 @@
+; ===================================
+; Npc Def NPC File : ToSoccerField-0
+; 
+; -----------------------------------
+; Name: ToSoccerField
+; Job: 
+; Map No: 0
+; Pos X 
+; Pos Y 
+; File name: *removed*
+; Comment: 
+
+;================================================= =
+;
+
+[@main]
+#SAY
+I am the Soccer Field guard\
+and here to celebrate 2006 world cup.\
+I would like to open this to you for free use.\ \ \
+<Go to First Soccer Field/@firstfield>    <Go to Second Soccer Field/@secondfield>\
+<Close./@close>
+
+[@firstfield]
+#SAY
+The first Soccer Field is PK free zone.\
+Go to center. You will get soccer ball.\
+Would you like to go?\ \
+<Go To Soccer field/@gotofirstfield1>\
+<Go To Soccer field/@gotofirstfield2>\
+<Go To Soccer field/@gotofirstfield3>\
+<Go To Soccer field/@gotofirstfield4>\
+<Go To Soccer field/@gotofirstfield5>          <Close./@close>
+
+[@secondfield]
+#SAY
+The second Soccer Field is NOT a PK free zone.\
+Go to center. You will get soccer ball.\
+Would you like to go?\ \
+<Go To Soccer field/@gotosecondfield1>\
+<Go To Soccer field/@gotosecondfield2>\
+<Go To Soccer field/@gotosecondfield3>\
+<Go To Soccer field/@gotosecondfield4>\
+<Go To Soccer field/@gotosecondfield5>          <Close./@close>
+
+[@gotofirstfield1]
+#IF
+CHECKHUM G008 10
+#SAY
+I'm sorry but this field already has 10 people playing.\ \
+<Try another/@firstfield>\
+<Close./@close>
+#ELSEACT
+mapmove G008 43 43
+break
+
+[@gotofirstfield2]
+#IF
+CHECKHUM G009 10
+#SAY
+I'm sorry but this field already has 10 people playing.\ \
+<Try another/@firstfield>\
+<Close./@close>
+#ELSEACT
+mapmove G009 43 43
+break
+
+[@gotofirstfield3]
+#IF
+CHECKHUM G010 10
+#SAY
+I'm sorry but this field already has 10 people playing.\ \
+<Try another/@firstfield>\
+<Close./@close>
+#ELSEACT
+mapmove G010 43 43
+break
+
+[@gotofirstfield4]
+#IF
+CHECKHUM G011 10
+#SAY
+I'm sorry but this field already has 10 people playing.\ \
+<Try another/@firstfield>\
+<Close./@close>
+#ELSEACT
+mapmove G011 43 43
+break
+
+[@gotofirstfield5]
+#IF
+CHECKHUM G012 10
+#SAY
+I'm sorry but this field already has 10 people playing.\ \
+<Try another/@firstfield>\
+<Close./@close>
+#ELSEACT
+mapmove G012 43 43
+break
+
+[@gotosecondfield1]
+#IF
+CHECKHUM G003 10
+#SAY
+I'm sorry but this field already has 10 people playing.\ \
+<Try another/@secondfield>\
+<Close./@close>
+#ELSEACT
+mapmove G003 43 43
+break
+
+[@gotosecondfield2]
+#IF
+CHECKHUM G004 10
+#SAY
+I'm sorry but this field already has 10 people playing.\ \
+<Try another/@secondfield>\
+<Close./@close>
+#ELSEACT
+mapmove G004 43 43
+break
+
+[@gotosecondfield3]
+#IF
+CHECKHUM G005 10
+#SAY
+I'm sorry but this field already has 10 people playing.\ \
+<Try another/@secondfield>\
+<Close./@close>
+#ELSEACT
+mapmove G005 43 43
+break
+
+[@gotosecondfield4]
+#IF
+CHECKHUM G006 10
+#SAY
+I'm sorry but this field already has 10 people playing.\ \
+<Try another/@secondfield>\
+<Close./@close>
+#ELSEACT
+mapmove G006 43 43
+break
+
+[@gotosecondfield5]
+#IF
+CHECKHUM G007 10
+#SAY
+I'm sorry but this field already has 10 people playing.\ \
+<Try another/@secondfield>\
+<Close./@close>
+#ELSEACT
+mapmove G007 43 43
+break

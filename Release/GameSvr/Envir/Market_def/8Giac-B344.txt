@@ -1,0 +1,135 @@
+; ===================================
+; Market Def NPC File : 8Giac-B344
+; 
+; -----------------------------------
+; Name: Monica
+; Job: 
+; Map No: B344
+; Pos X 16
+; Pos Y 14
+; File name: *removed*
+; Comment:
+
+;================================================= =
+;
+
+;Settings
+%100
++20
++19
++21
++22
++23
++24
++26
+
+[@main]
+#IF
+checkpkpoint 2
+#SAY
+I will not help such an evil person like you..\ \
+<Ok/@exit>
+
+#ELSEACT
+goto @main-1
+
+
+[@main-1]
+Welcome, Sir/Madam.\
+Have you come here to buy accessories?\ \
+<buy/@buy>\
+<sell/@sell>\
+<repair/@repair>\
+<talk/@talk> with Monica\
+<move/@Tmove> outside\
+<close/@exit>
+
+[@Tmove]
+#IF
+random 4
+#ACT
+mapmove 4 233 234
+break
+
+#IF
+random 4
+#ACT
+mapmove 4 232 335
+break
+
+#IF
+random 4
+#ACT
+mapmove 4 237 240
+break
+
+#IF
+random 4
+#ACT
+mapmove 4 238 238
+break
+
+#ELSEACT
+goto @Tmove
+
+[@buy]
+There are many accessories in this shop.\
+Please take your time and have a look.\ \
+<back/@main>
+
+[@sell]
+Would you mind showing me the item you want to sell?\
+I hope you want to sell something that we don't\
+have.\ \
+<back/@main>
+
+[@repair]
+You may think I'm too young but I'm quite adept at.\
+the craft.Just give me a chance,I'll repair
+it perfectly.\ \
+<back/@main>
+
+[@talk]
+There is a mysterious cave north-west of this castle.\
+Whoever entered the cave never came back and\
+even though the authorities controled the rumor,\
+almost everyone knows about it.\
+What? You've heard about it already?\ \
+<back/@main>
+
+[~@repair]
+It has been repaired well.\ \
+<back/@main>
+
+[goods]
+;Item		Amount		Time
+WhiteJadeRing		200	1
+CopperRing		200	1
+HexagonalRing		200	1
+GlassRing		200	1
+HornRing		200	1
+BlueRing		200	1
+BlackRing		200	1
+SerpentEyeRing		200	1
+PearlRing		200	1
+GoldRing		200	1
+ThinBracelet		200	1
+SilverBracelet		200	1
+IronBracer		200	1
+LargeBracelet		200	1
+SteelBracelet		200	1
+MonkBracelet		200	1
+EbonyBracelet		200	1
+MagicBracelet		200	1
+GoldNecklace		200	1
+AmberNecklace		200	1
+YellowNecklace		200	1
+EbonyNecklace		200	1
+BlackNecklace		200	1
+WarriorNecklce		200	1
+JadeNecklace		200	1
+LanternNeckl		200	1
+NagaNecklace		200	1
+PhoenixBead		200	1
+PlatinNecklace		200	1
+

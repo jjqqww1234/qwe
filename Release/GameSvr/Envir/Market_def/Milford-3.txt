@@ -1,0 +1,243 @@
+; ===================================
+; Npc Def NPC File : Milford-3
+; 
+; -----------------------------------
+; Name: Milford
+; Job: 
+; Map No: 3
+; Pos X 
+; Pos Y 
+; File name: *removed*
+; Comment: 
+
+;================================================= =
+;
+
+[@main]
+#IF
+CHECKLEVEL 50
+#ACT
+goto @level50check
+break
+
+[@level50check]
+#IF
+CHECK [209] 1
+#ACT
+goto @level50ending
+break
+
+#IF
+CHECK [207] 1
+#ACT
+goto @level50part13recheck
+break
+
+#IF
+CHECK [206] 1
+#ACT
+goto @level50part13
+break
+
+#IF
+CHECK [204] 1
+#ACT
+goto @level50part11repeat
+break
+
+#IF
+CHECK [203] 1
+#ACT
+goto @level50part11
+break
+
+#IF
+CHECK [201] 1
+#ACT
+goto @level50part9again
+break
+
+#IF
+CHECK [199] 1
+#ACT
+goto @level50part9
+break
+#ELSEACT
+break
+
+[@level50part9]
+#SAY
+You may have the power to help me...\
+Argh! Under my feet lives a King Centipede.\
+It is seizing me and constantly giving me pain...\
+Please help me...\ \
+"Mmm... I'll <hear/@level50part9-2> his story first"
+
+[@level50part9-2]
+#SAY
+The King Centipede has became parasitic on me\
+when I was wandering as a spirit after attacked by monsters.\
+By absorbing my vitailty, it grew bigger and bigger.\
+And in a few days, my vitailty will be completely dried up\
+and my soul will be completely destroyed.\
+Only a mighty hero like you can help me out of this situation...\ \
+"I think I can help <you/@level50part9-3>"
+
+[@level50part9-3]
+#SAY
+Wow...\ \
+( He is running out of breath. )\ \
+Thank you... The King Centipede is not here...\
+You can only get there through me. Here... Grab my hand.\
+I'll take you to where the King Centipede is.\ \
+<Grab his hand/@level50part9-4>
+
+[@level50part9-4]
+#IF
+CHECKHUM EM300 1
+#SAY
+*Room busy, try again later*\ \
+<Close/@exit>
+#ELSEACT
+monclear EM300
+map EM300
+SET [201] 1
+SET [202] 0
+
+[@level50part9again]
+#SAY
+( He is running out of breath. )\ \
+The King Centipede is not here...\
+You can only get there through me. Here... Grab my hand.\
+I'll take you to where the King Centipede is.\ \
+<Grab his hand/@level50part9-4>
+
+[@level50part11]
+#SAY
+Thank you. Now the pain is gone...\
+Thank you for your help.\
+Wait, I can sense my wife Khera from you.\ \ \
+"Aren't you Milford, the missing <husband?/@level50part11-2>"
+
+[@level50part11-2]
+#SAY
+Many years ago... Because of the attacks by monsters\
+people couldn't move freely around the Mir continent.\
+I was bold and young after learning a few skills from\
+a master in the past, I defeated some monsters, wandered places\
+and made considerable amount of money with my business.\
+And then one day... a big market was held in Sabuk wall...\ \
+<Listen to/@level50part11-3> the story.
+
+[@level50part11-3]
+#SAY
+I sold all my goods and my pocket was filled with money.\
+Then i bought a gift for Khera and wanted to run to Mongchon\
+as fast as possible thinking about how happy Khera will be\
+with the present. That night... the old man who rid the\
+horses insisted that it's too dangerous travelling at night\
+and tried to persuade me to start the journey in the morning...\ \
+<Listen/@level50part11-4> to the story.
+
+[@level50part11-4]
+#SAY
+But I wanted to see her so much so I packed up and departed from\
+Sabuk wall. Sigh... I should've listened to the old man..\
+After a while departing from Sabuk wall, we were passing by a pond\
+and we were suddenly attacked by monsters. The horses and the old man\
+were killed by the monsters but I resisted and fought.\ \
+<Listen/@level50part11-5> to the story.
+
+[@level50part11-5]
+#SAY
+I luckily slew all the monsters, but I was also fatally wounded...\
+Before i died... I pulled myself together and left a note leaving\
+traces for this place.\
+And I became a wandering spirit without a physical body.\ \
+"Then why are you <staying/@level50part11-6> here?"
+
+[@level50part11-6]
+#SAY
+That's because i burried the gift for my wife here.\
+I prepared it for our wedding anniversary.\
+There aren't any people around here and it's not\
+easy to find this place so I buried it here.\ \
+<Listen to/@level50part11-7> the story.
+
+[@level50part11-7]
+#SAY
+Mmmm... That's why I have a favor to ask of you.\
+I want you to deliver this box to Khera...\
+Will you please do it for me?\ \ \
+<Take the box/@level50part11-8>
+
+[@level50part11-8]
+#ACT
+SET [204] 1
+Give MilfordsBox 1
+#SAY
+The box is locked so tell her that she can find the key from\
+the red dress i gave her and please don't say anything about me...\
+Tell her that you found the box with a note from the broken cart.\
+And please tell her that she ought to meet a new man to start\
+a new life...\ \
+"I'll <tell her that/@exit>"
+
+[@level50part13]
+#ACT
+SET [207] 1
+#SAY
+Thank you for deliverring the box for me...\
+But I am worried that Khera may not know how to mend\
+her dress to find th ekey for the box...\
+Please will you help her mend it? You should know how to do it.\ \ \
+I will <help/@exit> her mend it.
+
+[@level50part13recheck]
+#SAY
+Please help her mend the dress to find the key.\ \ \ \
+I <will/@exit>
+
+[@level50ending]
+#SAY
+Welcome...\
+Is Khera still doing good?\ \ \ \
+<Hand over/@level50ending-2> the Chrysanthemum.
+
+[@level50ending-2]
+#IF
+Checkitem Chrysanthemum 1
+#ACT
+Take Chrysanthemum 1
+SET [300] 1
+Give Oak-RyoungPill 1
+#SAY
+Ah... Khera...\ \
+( I told him that Khera wanted me to put this next to the corpse... )\
+Thank you... And this is a little compensation for the 'Chrysanthemum'\ \
+" What do you plan to <do/@level50ending-3> now? "
+
+[@level50ending-3]
+#SAY
+After being killed by the monster, fortunately, I was not enslaved by the monsters\
+However... although the centipede is gone... The evil force still haunts me\
+so I can't get out of here now... Perhaps if lasting peace comes to the continent\
+I may be born again... If you get to pass this place in the future,\
+will you tell me how she's doing? Farewell, and take care...\
+" I will drop by sometime. "\ \
+(<Go back/@exit> to Khera again.)
+
+[@level50complete]
+#SAY
+Welcome...\
+Is Khera still doing good?\ \ \ \
+She is doing <fine/@exit>
+
+[@level50part11repeat]
+#SAY
+The box is locked so tell her that she can find the key from\
+the red dress i gave her and please don't say anything about me...\
+Tell her that you found the box with a note from the broken cart.\
+And please tell her that she ought to meet a new man to start\
+a new life...\ \
+"I'll <tell her that/@exit>"

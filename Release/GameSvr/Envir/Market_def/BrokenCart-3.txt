@@ -1,0 +1,85 @@
+; ===================================
+; Npc Def NPC File : BrokenCart-3
+; 
+; -----------------------------------
+; Name: BrokenCart
+; Job: 
+; Map No: 3
+; Pos X 
+; Pos Y 
+; File name: *removed*
+; Comment: 
+
+;================================================= =
+;
+
+[@main]
+#IF
+CHECKLEVEL 50
+#ACT
+goto @level50check
+break
+
+[@level50check]
+#IF
+CHECK [199] 1
+#ACT
+goto @level50part7recheck
+break
+
+#IF
+CHECK [198] 1
+#ACT
+goto @level50part7-3
+break
+
+#IF
+CHECK [197] 1
+#ACT
+goto @level50part7
+break
+#ELSEACT
+break
+
+[@level50part7]
+#SAY
+Judging from the shape of the spine and the teeth,\
+he must be an oldman.\
+When the skull swings with the wind, I feel something dismal.\
+Huh? There is something next to the skeleton?!\ \
+<Inspect/@level50part7-2>\
+It could be nothing.. <I should just go/@exit>
+
+[@level50part7-2]
+#ACT
+SET [198] 1
+Give OldBook
+#SAY
+Was this 'OldBook' what he lost?\
+Anyway, this skeleton doesn't seem to be the one I'm looking for.\ \ \ \
+I'll <inspect/@level50part7-3> the other one.
+
+[@level50part7-3]
+#SAY
+The condition of the skeleton is fairly well preserved.\
+Judging by the size ot if, he might have been tall and muscular.\
+This skeleton may be the one I'm looking for... I should look closer.\
+Huh? it's holding a piece of fabric on the hand...\ \
+Something is written on it.. <Shall i see it?/@level50part7-4>\
+Probably some trash... <I should just go/@exit>
+
+[@level50part7-4]
+#ACT
+SET [199] 1
+#SAY
+Where Buddha is asleep.. My Khera..Tell..\ \
+It's hard to read... it was probably a dying message.\
+Mmm.. He wrote the with his blood before he died..Something happened\
+where Buddha is asleep? It must be a clue... I think I know where he\
+is talking about...\ \
+<I'll look for it/@exit>
+
+[@level50part7recheck]
+#SAY
+Hmmm..."Where Buddha is alseep" it must be a clue.\ \ \ \ \
+<Close/@exit>

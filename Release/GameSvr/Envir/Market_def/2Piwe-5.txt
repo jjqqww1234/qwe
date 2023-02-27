@@ -1,0 +1,84 @@
+; ===================================
+; Market Def NPC File : 2Piwe-5
+; PrajnaIsland (WeaponShop)
+; -----------------------------------
+; Name: Colby
+; Job: 
+; Map No: 5
+; Pos X 156
+; Pos Y 297
+; File name: *removed*
+; Comment: PrajnaIsland (WeaponShop)
+
+;================================================= =
+;
+
+;Settings
+%100
++5
++6
++43
+
+[@main]
+#IF
+checkpkpoint 2
+#SAY
+I will not help an evil person like you..\ \
+<Ok/@exit>
+
+#ELSEACT
+goto @main-1
+
+
+[@main-1]
+Welcome. Your look tells me you are from far place.\
+You came here to repair your weapon?\ \
+<Buy weapon/@buy>\
+<Sell weapon/@sell>\
+<Repair weapon/@repair>\
+<Ask special repair/@s_repair>\
+<Talk with Colby/@talk>\
+<Close/@exit>
+
+[@buy]
+We've got most of the weapons\
+you can get from the mainland.\
+Just choose what you want.\ \
+<back/@main>
+
+[@sell]
+Oh! Nice to hear that!\
+If you've got some usefull ones, please show me.\ \
+<back/@main>
+
+[@repair]
+You want the normal repair?\
+Hmmm, you are having some financial trouble, aren't you?\
+Anyway, give me the weapon.\ \
+<back/@main>
+
+[@s_repair]
+Hey guy! You are very lucky...\
+We have material to do special repairs,\
+Instead, please keep in mind that the price\
+would be 3 times higher than normal price.\ \
+<back/@main>
+
+[~@repair]
+It seems in good condition now.\ \
+<back/@main>
+
+[@talk]
+I'm not originally from this island.\
+I really miss my home town,\
+but i'm not sure I will see it again...\ \
+<Back/@main>
+
+
+[goods]
+;Item		Amount		Time
+WoodenSword     100         	1
+BronzeSword	100		1 
+IronSword	100		1
+ShortSword 	100		1
+SteelAxe	100		1

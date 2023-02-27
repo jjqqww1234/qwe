@@ -1,0 +1,2 @@
+[VERSION=1]
+;Territory no.|Guild name|Guild master|Reg Date|Remain days|Territory gold|On sale|Sale gold|Sale remain days|Buy Guild name|Buy Guild master|Conclusion date

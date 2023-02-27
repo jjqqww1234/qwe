@@ -1,0 +1,82 @@
+; ===================================
+; Npc Def NPC File : Sigal-0
+; 
+; -----------------------------------
+; Name: Sigal
+; Job: 
+; Map No: 0
+; Pos X 
+; Pos Y 
+; File name: *removed*
+; Comment: 
+
+;================================================= =
+;
+
+[@main]
+#SAY
+Greetings, happy Easter Holiday to you stanger!\
+I travel all around the continent during the Easter holidays\
+spreading my easter stories and granting access to EasterLand\
+which only opens once a year.\
+<EasterLand?/@easterland>\
+<Another time/@exit>
+
+[@easterland]
+EasterLand is a small land on the far reaches of the\
+continent closed by a magical seal that only opens for\
+7 days during the Easter Holiday period. It is home to\
+some familiar monsters to you but they have been specially\
+empowered by the seal to give special items to visitors.\
+<How can i get there?/@getthere>\
+
+[@getthere]
+Only I can take you to this land, and I will do it for free\
+since it is Easter Holiday.\
+Would you like to go there?\ \
+<Yes, please take me there/@eastermove>\
+<Maybe later/@exit>
+
+[@eastermove]
+#IF
+CHECKLEVEL 40
+#ACT
+mapmove Easter40 54 53
+#SAY
+Welcome to EasterLand, I have bought you here to my holiday home\
+that i use every Easter. It is safe around this area most of the time.\
+If you want to go back come back and speak to me and I will show\
+you the way home.\ \
+#ELSEACT
+goto @eastermove33
+
+[@eastermove33]
+#IF
+CHECKLEVEL 33
+#ACT
+mapmove Easter33 54 53
+#SAY
+Welcome to EasterLand, I have bought you here to my holiday home\
+that i use every Easter. It is safe around this area most of the time.\
+If you want to go back come back and speak to me and I will show\
+you the way home.\ \
+#ELSEACT
+goto @eastermove22
+
+[@eastermove22]
+#IF
+CHECKLEVEL 22
+#ACT
+mapmove Easter22 54 53
+#SAY
+Welcome to EasterLand, I have bought you here to my holiday home\
+that i use every Easter. It is safe around this area most of the time.\
+If you want to go back come back and speak to me and I will show\
+you the way home.\ \
+#ELSEACT
+mapmove Easter01 54 53
+#ELSESAY
+Welcome to EasterLand, I have bought you here to my holiday home\
+that i use every Easter. It is safe around this area most of the time.\
+If you want to go back come back and speak to me and I will show\
+you the way home.\ \

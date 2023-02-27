@@ -1,0 +1,58 @@
+; ===================================
+; Npc Def NPC File : Sigal-Easter40
+; 
+; -----------------------------------
+; Name: Sigal
+; Job: 
+; Map No: Easter40
+; Pos X 52
+; Pos Y 54
+; File name: *removed*
+; Comment: 
+
+;================================================= =
+;
+
+[@main]
+#SAY
+Hello again hunter, are you having fun?\
+It isn't as easy as you thought is it?\
+Let me tell you a story...\ \
+<Go on/@next>\
+<No thanks, take me back/@goback>
+
+[@goback]
+#ACT
+mapmove 0 328 263
+break
+
+[@next]
+Many centuries ago when this land was still part of the Bichon\
+Continent these lands were home to many wild animals such as Deer\
+and Hen. Green grass as far as the eye could see, until one early dawn\
+around the time of the Easter Holidays a giant glowing meteor\ 
+in the shape of an egg plunged into the far east blocking the\ 
+mountain pass between here and the early Bichon Wall.\
+<More/@next2>
+
+[@next2]
+Within minutes the egg exploded into a magical seal which covered\
+the whole east side from north to south, spreading fire and drought\
+to the whole eastern side of the land. The wild animals started dying\
+off, the Hens all died away quickly and the few remaining Deer\
+were pushed onto the west side of the land. Over time the east side\
+of the land became a barron desert. Whilst the west side was still\
+hanging on to the gentle green garden look it had retained for\
+hundreds of years.\
+<More/@next3>
+
+[@next3]
+The land looked to stay this way for the distant future until mysteriously\
+the early ancestors of the Oma began inhabiting the east side of the\
+land. It is thought the seal spawned them but noone really knows.\
+All we do know is that they are empowered by it and live from its power.\
+It started off only very small numbers of Oma, but gradually increased\ 
+until they covered the entire land, finally wiping out the recovering \
+Deer herds. Leading up to what you see here today.\
+<Close/@exit>\
+<Take me back/@goback>

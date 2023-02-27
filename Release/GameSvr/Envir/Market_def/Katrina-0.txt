@@ -1,0 +1,71 @@
+; ===================================
+; Npc Def NPC File : Katrina-0
+; 
+; -----------------------------------
+; Name: Katrina
+; Job: 
+; Map No: 0
+; Pos X 
+; Pos Y 
+; File name: *removed*
+; Comment:
+
+;================================================= =
+;
+
+
+[@main]
+This year is the Golden-pig's year which comes\
+in every 600 years?\
+Lucky pig 3 brothers come here to celebrate this year.\
+If you catch lucky pig, you will have good luck this year.\
+If you bring me the lottery which will be dropped by lucky pigs,\
+I will switch it to gold.\\
+<Show him the lottery/@show>\
+<Close/@exit>
+
+[@show]
+#IF
+checkitem LuckyLottery 1
+#ACT
+take LuckyLottery 1
+goto @reward
+#ELSESAY
+You don't have a lottery.\
+Come back to me with a lottery.\ \
+<Close/@exit>
+
+
+[@reward]
+#IF
+random 5
+#ACT
+give Gold 5000
+break
+
+#IF
+random 5
+#ACT
+give Gold 50000
+break
+
+#IF
+random 5
+#ACT
+give Gold 250000
+break
+
+#IF
+random 5
+#ACT
+give Gold 500000
+break
+
+#IF
+random 5
+#ACT
+give Gold 1000000
+break
+
+
+

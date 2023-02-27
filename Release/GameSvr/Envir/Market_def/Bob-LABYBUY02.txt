@@ -1,0 +1,44 @@
+; ===================================
+; Market Def NPC File : Bob-LABYBUY02
+; PrajnaIsland
+; -----------------------------------
+; Name: Bob
+; Job: 
+; Map No: LABYBUY02
+; Pos X 4
+; Pos Y 7
+; File name: *removed*
+; Comment: PrajnaIsland
+
+;================================================= =
+;
+
+;Settings
+%300
++0
++42
++30
++3
+
+[@main]
+Welcome courageous hunter, how may I help you?\ \
+<Buy/@buy>  Items\
+<Close/@exit>
+
+[@buy]
+Endless days after days I wander in this place.\
+Will I ever get the chance to see my family again, before I die?\ \ \
+ <Back/@main>
+
+[goods]
+;Item		Amount		Time
+Torch			200	1
+DungeonEscape		200	1
+DungeonEscapeBundle		200	1
+RandomTeleport		200	1
+RandomTeleportBundle		200	1
+RepairOil		200	1
+(HP)DrugLarge		200	1
+(MP)DrugLarge		200	1
+(HP)DrugBundle		200	1
+(MP)DrugBundle		200	1

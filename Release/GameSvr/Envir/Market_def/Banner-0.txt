@@ -1,0 +1,20 @@
+; ===================================
+; Npc Def NPC File : Banner-0
+; 
+; -----------------------------------
+; Name: Banner
+; Job: 
+; Map No: 0
+; Pos X 
+; Pos Y 
+; File name: *removed*
+; Comment:
+
+;================================================= =
+;
+
+[@main]
+#SAY
+Welcome to Legend Of Mir 2 Europe 5th anniversary!\
+We have lots of games and events for you, let's celebrate!\
+Ask NightRose for all the details.

@@ -1,0 +1,102 @@
+[Server]
+ServerIndex=0
+ServerName=DRAGON
+ServerNumber=0
+VentureServer=FALSE
+TestServer=TRUE
+ClientTest=FALSE
+TestLevel=1
+TestGold=0
+TestServerUserLimit=1000
+ServiceMode=FALSE
+NonPKServer=FALSE
+
+DBAddr=127.0.0.1
+DBPort=6000
+IDSAddr=127.0.0.1
+IDSPort=5600
+MsgSrvAddr=127.0.0.1
+MsgSrvPort=4900
+
+HumLimit=30
+MonLimit=20
+ZenLimit=20
+NpcLimit=5
+SocLimit=30
+DecLimit=20
+UserFull=700
+ZenFastStep=200
+SendBlock=1000
+CheckBlock=8000
+AvailableBlock=8000
+GateLoad=0
+LogServerAddr=127.0.0.1
+LogServerPort=10000
+ViewHackMessage=TRUE
+ViewAdmissionFailure=TRUE
+HalfFeeStart=2
+HalfFeeEnd=10
+DiscountForNightTime=1
+
+[Share]
+BaseDir=.\Share\
+GuildDir=.\GuildBase\Guilds\
+GuildFile=.\GuildBase\Guildlist.txt
+VentureDir=.\ShareV\
+ConLogDir=.\ConLog\
+ChatLogBaseDir=.\ChatLog\
+CastleDir=.\Envir\Castle\
+EnvirDir=.\Envir\
+MapDir=.\Map\
+
+[Setup]
+ClientFile1=mir2.dat
+ClientFile2=mir2.exe
+ClientFile3=
+
+ItemNumber=14756005
+HomeMap=0
+HomeX=334
+HomeY=266
+
+[Names]
+GiveItemWarMan   = BaseDress(M),WoodenSword,Candle,(HP)DrugSmall
+GiveItemWarWoman = BaseDress(F),WoodenSword,Candle,(HP)DrugSmall
+
+GiveItemWizMan   = BaseDress(M),WoodenSword,Candle,(HP)DrugSmall,(MP)DrugSmall
+GiveItemWizWoman = BaseDress(F),WoodenSword,Candle,(HP)DrugSmall,(MP)DrugSmall
+
+GiveItemTaoMan   = BaseDress(M),WoodenSword,Candle,(HP)DrugSmall,(MP)DrugSmall
+GiveItemTaoWoman = BaseDress(F),WoodenSword,Candle,(HP)DrugSmall,(MP)DrugSmall
+ 
+GoldStone        = 'GoldOre'
+SilverStone      = 'SilverOre'
+SteelStone       = 'IronOre'
+CopperStone      = 'CopperOre'
+BlackStone       = 'BlackIronOre'
+Gem1Stone        = 'Ruby'
+Gem2Stone        = 'Amethyst'
+Gem3Stone        = 'Nephrite'
+Gem4Stone        = 'Platinum'
+ 
+Zuma1            = 'ZumaGuardian'
+Zuma2            = 'ZumaStatue'
+Zuma3            = 'ZumaArcher'
+Zuma4            = 'WedgeMoth'
+
+Bee              = 'BugBat'
+Spider           = 'BombSpider'
+
+Skeleton         = 'BoneFamiliar'
+Dragon           = 'Shinsu'
+Dragon1          = 'Shinsu1'
+Angel		 = 'HolyDeva'
+
+Clone		 = 'Clone'
+
+WomaHorn         = 'WoomaHorn'
+BuildGuildFee    = 1000000
+ZumaPiece        = 'ZumaRelic'
+
+GoldenImugi      = 'Yimoogi'
+WhiteSnake       = 'GuardianViper'

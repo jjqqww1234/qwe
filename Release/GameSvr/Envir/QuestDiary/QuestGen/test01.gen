@@ -1,0 +1,41 @@
+[GEN]
+;맵     x     y     몬스터       범위   마리수 (겹쳐서 젠되 된다)
+D001    100   1000  오마용사     1      5
+
+[ACT]
+wondering
+;patrol 120 100, 100 100      //왕복하며 방어
+;defense  120 100             //이 지역을 통과 못하도록 방어
+;guard    오마대장            //오마대장을 보호, 오마대장을 공격하는 적을 일순위로 공격
+
+sight     6           //시야는 6칸
+walk      600         //ms
+walkstep  5  1000     //5칸 연속으로 걸은 다음 1000ms 쉰다.
+attack    1200        //ms
+
+chg_ac    35 50       //방어력 35~50
+;chg_mac   10 15       //마항력 10~15
+chg_dc    15 30       //공격력 15~30
+
+anti_fire   25        //불마법 방어 25%
+anti_light  25        //빛마법 방어 25%
+anti_ice    25        //얼음마법 방어 25%
+;anti_nature 25        //자연계마법 방어 25%
+
+anti_dark   25        //어둠마법 방어 25%
+anti_holy   25        //신성마법 방어 25%
+anti_phantom  25      //환영마법 방어 25%
+;anti_soul             //영혼계마법 방어 25%
+
+[DIE]
+;gen  오마  3  5          //오마를 범위 3칸안에 5마리를 젠시킴
+;drop 체력회복약(대)  2   //아이템을 2개 떨굼
+#call  [test.txt]   @give_oma_fighter
+
+
+[GEN]
+D001    100   100      오마대장  0      1   
+    
+[ACT]
+[DIE]
+

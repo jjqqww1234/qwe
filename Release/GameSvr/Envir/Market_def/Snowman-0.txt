@@ -1,0 +1,51 @@
+; ===================================
+; Npc Def NPC File : Snowman-0
+; 
+; -----------------------------------
+; Name: Snowman
+; Job: 
+; Map No: 0
+; Pos X 
+; Pos Y 
+; File name: *removed*
+; Comment: 
+
+;================================================= =
+;
+
+[@main]
+#SAY
+Hey <$USERNAME> Brrrrrrr is it cold out here or is it me?\
+I will melt soon if I dont get a frequent supply of Ice.\
+Can you help me by killing trees and taking the Ice that has\
+layered on their branches?\ \
+I will <help/@next>\
+<Close/@exit>
+
+[@next]
+Brrrr great thank you <$USERNAME>...\
+Please bring me 10 IcePieces so i can stay here for longer.\
+As a reward I will give you the frozen Icicles that build up\
+on my snowbelly.\ \
+<I have the Ice/@checkice>\
+<Close/@exit>
+
+[@checkice]
+#IF
+checkitem Ice 10
+#ACT
+take Ice 10
+give Icicle 1
+#SAY
+Brrrrr great 10 pieces of Ice, thanks very much <$USERNAME>\
+now I will not melt for a long time.\
+As i promised for 10 pieces of ice here is an icicle from my snowbelly.\
+Please come back to me when you have more Ice Pieces\
+<Close/@exit>
+#ELSEACT
+take Ice 10
+#ELSESAY
+Brrr thanks for the Ice top-up <$USERNAME> this will last me\
+for a little while. But as it was not 10 pieces I can not get an Icicle\
+from my body, please come back to me when you have more Ice.\
+<Close/@exit>

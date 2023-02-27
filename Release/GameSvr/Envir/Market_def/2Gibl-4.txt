@@ -1,0 +1,47 @@
+; ===================================
+; Market Def NPC File : 2Gibl-4
+; (CastleGi-Ryoong)
+; -----------------------------------
+; Name: Wayne
+; Job: 
+; Map No: 4
+; Pos X 227
+; Pos Y 223
+; File name: *removed*
+; Comment: (CastleGi-Ryoong)
+
+;================================================= =
+;
+
+;Settings
+%100
++5
++6
++43
+
+[@main]
+#IF
+checkpkpoint 2
+#SAY
+I will not help an evil person like you..\ \
+<Ok/@exit>
+
+#ELSEACT
+goto @main-1
+
+
+[@main-1]
+Welcome. What do you want to repair?\ \
+Do special <repair/@s_repair>\
+<close/@exit>
+
+
+[@s_repair]
+Hey guy! You are very lucky...\
+We have material to do special repairs,\
+Instead, please keep in mind that the price\
+would be 3 times higher than normal price.\ \
+<back/@main>
+
+
+

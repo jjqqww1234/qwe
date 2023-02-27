@@ -1,0 +1,4 @@
+; Followings have to be arrayed by server no. (0, 1, 2..)
+;server no.   connect-addr  port
+0       127.0.0.1    7200
+

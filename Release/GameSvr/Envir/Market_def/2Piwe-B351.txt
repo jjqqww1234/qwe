@@ -1,0 +1,81 @@
+; ===================================
+; Market Def NPC File : 2Piwe-B351
+; PrajnaIsland (WeaponShop)
+; -----------------------------------
+; Name: Keith
+; Job: 
+; Map No: B351
+; Pos X 8
+; Pos Y 9
+; File name: *removed*
+; Comment: PrajnaIsland (WeaponShop)
+
+;================================================= =
+;
+
+;Settings
+%100
++5
++6
++43
+
+;Pkr Tag (NPC won't talk to Pkrs)
+[@main]
+#IF
+checkpkpoint 2
+#SAY
+I will not help an evil person like you..\ \
+<Ok/@exit>
+
+#ELSEACT
+goto @main-1
+
+
+[@main-1]
+There are many usefull weapons here.\
+Please have a look.\ \
+<buy weapon/@buy>\
+<sell weapon/@sell>\
+<repair weapon/@repair>\
+<conduct special repair/@s_repair>\
+<move outside/@Tmove>\
+<Close/@exit>
+
+[@Tmove]
+#IF
+#ACT
+mapmove 5 128 303
+break
+
+[@buy]
+You found anything you like?\ \
+<back/@main>
+
+[@sell]
+The price is up to the condition of the weapon.\
+<back/@main>
+
+[@repair]
+If you want, i'll repair it for you.\
+But I recommend you special repair.\ \
+<back/@main>
+
+[~@repair]
+It seems in good condition now.\ \
+<back/@main>
+
+[@s_repair]
+Hey guy! You are very lucky...\
+We have material to do special repairs,\
+Instead, please keep in mind that the price\
+would be 3 times higher than normal price.\ \
+<back/@main>
+
+
+[goods]
+;Item		Amount		Time
+WoodenSword     100         	1
+BronzeSword	100		1 
+IronSword	100		1
+ShortSword 	100		1
+SteelAxe	100		1

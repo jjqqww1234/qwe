@@ -1,0 +1,15 @@
+;
+;QGO Transit Patch
+;
+;Controls Access to the Disused Mines of Chengan (new n00b area)
+;
+
+[@main]
+
+#IF
+check [50] 0
+
+#SAY
+Entry to these mines is forbidden to the newer population\
+of Chengan, due to safety concerns within the structure.\
+BY ORDER of the Chengan Village Council.\ \

@@ -1,0 +1,98 @@
+1/1   Gold 450
+
+1/1    SunPotion(M)
+1/1    SunPotion(M)
+1/1    SunPotion(M)
+1/2    SunPotion(M)
+1/2    SunPotion(M)
+1/1    SunPotion
+1/1    SunPotion
+1/1    SunPotion
+1/1    SunPotion
+1/2    SunPotion
+1/2    SunPotion
+1/2    SunPotion
+1/2    SunPotion
+1/1    (HP)DrugMedium
+1/1    (HP)DrugMedium
+1/1    (HP)DrugLarge
+1/2    (HP)DrugLarge
+1/2    (HP)DrugLarge
+1/1    (MP)DrugMedium
+1/1    (MP)DrugMedium
+1/1    (MP)DrugLarge
+1/2    (MP)DrugLarge
+1/2    (MP)DrugLarge
+
+1/30   SpiritDrug
+1/30   SpiritDrug
+
+1/30  DeathGauntlet
+1/30  PowerAxe
+1/30  SkeletonHelmet
+
+1/30  DragonRing
+1/50  RubyRing
+1/50  PlatinumRing
+
+1/15  GoldRing
+1/15  BlueJadeNeckl
+1/15  GoldBracelet
+1/15  MoralRing
+1/15  CharmRing
+
+1/25  SoulShield
+1/25  FireBang
+1/25  MassHiding
+1/25  FireWall
+1/25  BlessedArmor
+1/25  Thrusting
+
+1/70    TrapHexagon
+1/90    Thunderstorm
+1/90    HalfMoon
+
+1/130    MagicShield
+1/100   ShoulderDash
+
+1/8   MonkBracelet
+1/8   EbonyBracelet
+1/8   KrissSword
+1/8   BlackRing
+1/8   SerpentEyeRing
+1/8   PearlRing
+1/8   PrinceSword
+1/8   MartialSword
+1/8   HoockedSpear
+1/8   IronRing
+1/8   TigerNecklace
+1/8   PlatinNecklace
+1/8   SkeletonRing
+1/8   StrainBracelet
+
+1/8   GreatFball
+1/8   SummonSkel
+1/8   Teleport
+1/8   Slaying
+1/8   Poisoning
+1/8   Hiding
+
+1/6   HoockedSword
+1/6   Scimitar
+1/6   Trident
+1/6   SteelSword
+1/6   BlueRing
+1/6   NagaNecklace
+1/6   AmberNecklace
+1/6   PhoenixBead
+1/6   HardGlove
+1/6   MagicBracelet
+1/6   LanternNeckl
+
+1/6   SoulFireball
+1/6   Thunderbolt
+1/6   Hellfire
+1/6   ElecShock
+
+;;From Korea:6month_PatchOne
+1/20   GoldenTiara

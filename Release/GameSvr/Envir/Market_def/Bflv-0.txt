@@ -1,0 +1,88 @@
+; ===================================
+; Market Def NPC File : Bflv-0
+; 
+; -----------------------------------
+; Name: FlowerVendor
+; Job: 
+; Map No: 0
+; Pos X 345
+; Pos Y 332
+; File name: *removed*
+; Comment: 
+
+;================================================= =
+;
+
+[@main]
+#SAY
+Buy flowers~\
+Buy flowers. Yes, flowers.\
+Love, Love, Love, Love\
+Love, Love, the flower of love ~\ \
+<Buy/@flower> flowers\
+
+[@flower]
+#IF
+CHECKLOVERFLAG
+#SAY
+So you want to suprise that special someone with flowers\
+ok.. Buy as many as you like!\ \ \
+<Buy flowers/@buy>\
+<Talk/@talk> with florist\
+<End conversation/@exit>\
+#ELSESAY
+Om my! My flowers are all sold out!\
+I have nothing more to sell.\
+Wouldn't you be my company for a while?\ \ \
+<Talk/@talk> with florist\
+<End conversation/@exit>\
+
+[@buy]
+#SAY
+Buy as many flowers as you like!\ \ \
+<Back/@main>\
+
+[@talk]
+#SAY
+Mmm~ This park is nice.\
+I would like to play hide and seek with my girlfriend here.\ \ \ \
+<Part/@part> with a lover\
+<End conversation/@exit>\
+
+[@part]
+#SAY
+Wha?! What happened?\
+If you truly wish to do so, I cannot stop you, but...\
+Isn't it better for both of you to have a disscussion on this?\ \ \
+<.../@dev1>\
+<End conversation/@exit>\
+
+[@dev1]
+#IF
+CHECKLOVERFLAG
+#SAY
+Do you really want to part with your lover?\
+It will cost you 100'000 gold to use this service\ \ \
+<Ask/@devorce> for a Divorce\
+<End conversation/@exit>\
+#ELSESAY
+Hmm? You don't have a lover.\
+Come back after you found a new lover.\ \ \
+<End conversation/@exit>\
+
+[@devorce]
+#IF
+Checkgold 100000
+#ACT
+take gold 100000
+BREAKLOVER
+#SAY
+You are now Single again!\ \ \
+<End conversation/@exit>\
+#ELSESAY
+You dont seem to have 100000 gold or you dont have a lover!\
+come see me again when you do...\ \ \
+<End conversation/@exit>\
+
+[goods]
+FlowerBunch	100	5

@@ -1,0 +1,11 @@
+1/4   Gold  100
+
+1/400    BaseDress(M)
+1/400    BaseDress(F)
+1/400    WoodenSword
+1/400    Dagger
+1/400    EbonySword
+1/400    GoldNecklace
+1/400    CopperRing
+1/400    IronBracer
+1/400    PrecisionNeckl

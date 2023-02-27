@@ -1,0 +1,62 @@
+; ===================================
+; Market Def NPC File : 9Wae5-11
+; TaoTown
+; -----------------------------------
+; Name: Apprentice
+; Job: 
+; Map No: 11
+; Pos X 195
+; Pos Y 325
+; File name: *removed*
+; Comment: TaoTown
+
+;================================================= =
+;
+
+[@main]
+#IF
+CHECK [194] 1
+#ACT
+goto @level50part5
+#ELSEACT
+goto @main-1
+
+[@level50part5]
+#SAY
+(An Apprentice drowsing, drooling.... )\ \ \ \ \
+"<Hello/@level50part5-1>"
+
+[@level50part5-1]
+#SAY
+Wow, My goodness!\
+Who are you? Do you think the master knows?\ \
+( trying to read the master's mind. )\ \
+"Didn't you get lost around the Sabuk wall some time <ago?/@level50part5-2>"
+
+[@level50part5-2]
+#SAY
+What are you talking about? I never left this place since I was born.\
+What in the... Oh! Are you talking about Kane?\
+He was on a trip to Sabuk by the Master's order 5 years ago.\
+He lost his way there and came back way behind schedule.\
+And he even lost the 'precious freight' he was supposed to deliver.\
+Master could eat him alive. Hahaha!\ \
+"<Where is/@level50part5-3> this person called Kane now?"
+
+[@level50part5-3]
+#ACT
+SET [196] 1
+#SAY
+\
+Do you know where the stone pagoda is, on the way to Tree Path?\
+He might be training there.\ \ \
+"Hmmm... where is this place... anyway, <Thank you/@exit>"
+
+[@main-1]
+There is a cursed mountain at the end of the vicious woods,\
+the red moon is over the ridge of the mountain..\
+the whole world may be under blood.\
+Wow it's a scribbling written in an old book I never saw before.\
+It seems to indicate something but I have no idea what.\ \
+<Thanks/@exit>
+

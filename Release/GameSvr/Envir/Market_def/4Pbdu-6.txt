@@ -1,0 +1,65 @@
+; ===================================
+; Market Def NPC File : 4Pbdu-6
+; 
+; -----------------------------------
+; Name: Gordon
+; Job: 
+; Map No: 6
+; Pos X 129
+; Pos Y 143
+; File name: *removed*
+; Comment: 
+
+;================================================= =
+;
+
+;Settings
+%100
++0
++42
+
+[@main]
+#IF
+checkpkpoint 2
+#SAY
+I will not help an evil person like you..\ \
+<Ok/@exit>
+
+#ELSEACT
+goto @main-1
+
+
+[@main-1]
+If you are about to take a long journey,\ 
+buy drugs as many as you can.\
+Those drugs will save you many times.\
+Even if you get the highest honour,\
+it is no use after your death. Ain't that right?\ \
+<buy/@buy> drug\
+<sell/@sell> drug\
+<close/@exit>
+
+[@buy]
+Which one do you want to buy?\ \
+<back/@main>
+
+
+[@sell]
+You want to sell?\
+I will pay you more for precious ones.\ \
+<back/@main>
+
+[goods]
+;Item		Amount		Time
+(HP)DrugSmall		200	1	
+(MP)DrugSmall		200	1
+(HP)DrugMedium		200	1
+(MP)DrugMedium		200	1
+(HP)DrugLarge		200	1
+(MP)DrugLarge		200	1
+(HP)SDrugBundl		200	1
+(MP)SDrugBundl		200	1
+(HP)MDrugBundl		200	1
+(MP)MDrugBundl		200	1
+(HP)DrugBundle		200	1
+(MP)DrugBundle		200	1

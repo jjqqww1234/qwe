@@ -1,0 +1,28 @@
+; =============================
+; QGO Easter Event 2003
+; 9 Apr 2003 - xA2 Mob function
+; =============================
+[@main]
+
+#IF
+check [782] 1
+#ACT
+break
+
+#IF
+check [781] 0
+#ACT
+break
+
+;
+; Players Have killed all previous in sequence
+;
+#IF
+random 5
+check [772] 1
+#ACT
+SET [782] 1
+give HornRing 1
+#SAY
+The monster dies, and as it falls, a Ring lands \
+into your bag. \ \

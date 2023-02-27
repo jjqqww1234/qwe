@@ -1,0 +1,28 @@
+ID=序号
+NAME=怪物名字
+RACE=辑滚俊辑 汲沥窍绰 各狼 傍拜屈怕 汲沥蔼 ( 流立 , 盔芭府 , 埃立 ,付过 ˇ)
+RACEIMG=努扼捞攫飘俊辑 汲沥窍绰 各狼 傍拜屈怕
+IMGINDEX=[APPR]胶橇扼捞飘惑狼 困摹蔼
+LV=等级
+UNDEAD=0 = 死系 , 1= 不死系 ( UNDEAD)
+COOLEYE=视野范围
+EXP=经验值
+HP=体力值
+MP=魔法值
+AC=防御
+MAC=最大防御
+DC=攻击
+DCMAX=最大攻击
+MC=付仿	( 泅犁 绝澜 )
+SC=档仿 ( 泅犁 绝澜 )
+AGILITY=[SPEED]刮酶 , 雀乔 己傍伏 拌魂俊 荤侩
+ACCURATE=[HIT]沥犬 , 傍拜 己傍伏 拌魂俊 荤侩
+WALK_SPD=移动速度
+WALKSTEP=移动步骤
+WALKWAIT=移动等候
+ATTACK_SPD=攻击速度
+TAME=驯服
+ANTIPUSH=不能推动
+ANTIINDEAD=荤磊辣雀规绢仿
+SIZERATE=个狼 农扁 硅啦
+

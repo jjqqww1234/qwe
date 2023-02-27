@@ -1,0 +1,20 @@
+; QGO Easter Event 2003
+; Easter Lamb Function
+[@main]
+
+#IF
+check [777] 1
+#ACT
+break
+
+#IF
+random 10
+check [770] 1
+#ACT
+SET [777] 1
+give A 1
+#SAY
+As it bleats its last \
+breath, the lamb scrambles \
+something into your bag... \ \
+

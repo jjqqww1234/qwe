@@ -1,0 +1,22 @@
+[@fight_oma_king]
+{
+#ACT
+pastemap   D001.map
+pastemap   D002.map
+loadgen    "QuestGen\test01.gen"
+
+
+}
+
+[@give_oma_fighter]
+{
+#IF
+check  [401]  1       //이벤트 검사
+check  [402]  0
+
+#ACT
+give   오마용사의검   1
+set    [402]   1
+
+}
+

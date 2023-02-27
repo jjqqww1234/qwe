@@ -1,0 +1,38 @@
+1/4  Gold 250
+1/10000 Gold  500
+
+1/20000  StaminaAid
+1/20000   MagicAid
+
+1/15  (HP)DrugMedium
+1/25  (MP)DrugMedium
+1/50  SunPotion
+
+1/2400   Lightning
+1/7200   Revelation
+1/2400   BlessedArmor
+1/2400   Thrusting
+1/2400   FireWall
+1/2400   SoulShield
+1/2400   FireBang
+1/2400   MassHiding
+
+1/1200   Poisoning
+1/1200   Slaying
+1/1200   Hiding
+1/1200   GreatFball
+1/1200   SummonSkel
+1/1200   Teleport
+1/1200   SoulFireball
+1/1200   Thunderbolt
+1/1200   Hellfire
+1/1200   ElecShock
+
+1/600   Repulsion
+1/600   SpiritSword
+1/600   Fireball
+1/600   Healing
+1/600   Fencing
+
+;;From Korea:6month_PatchOne
+1/1000   BrassHelmet

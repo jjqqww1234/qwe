@@ -1,0 +1,71 @@
+; ===================================
+; Market Def NPC File : 4Pidu-5
+; PrajnaIsland
+; -----------------------------------
+; Name: Sandford
+; Job: 
+; Map No: 5
+; Pos X 161
+; Pos Y 315
+; File name: *removed*
+; Comment: PrajnaIsland
+
+;================================================= =
+;
+
+;Settings
+%100
++0
++42
+
+[@main]
+#IF
+checkpkpoint 2
+#SAY
+I will not help an evil person like you..\ \
+<Ok/@exit>
+
+#ELSEACT
+goto @main-1
+
+
+[@main-1]
+I'm Sandford, the only potion dealer\
+and medical practitioner in this island.\
+Any trouble with your body?\ \
+<buy drug/@buy> \
+<sell drug/@sell>\
+<talk with Sandford/@talk>\
+<close/@exit>
+
+[@buy]
+Do you want to buy any drug? I used the local ingredients\
+for making them instead of the ones from the main land\
+but the effect will be almost the same.\ \
+<back/@main>
+
+
+[@sell]
+Tell you I won't accept any left-over drug from you.\
+A drug get easily spoiled once the lid is taken off.\ \
+<back/@main>
+
+[@talk]
+Hmmm... Shall I add lots of preservatives to that?...\ \
+<back/@main>
+
+
+[goods]
+;Item		Amount		Time
+(HP)DrugSmall		200	1	
+(MP)DrugSmall		200	1
+(HP)DrugMedium		200	1
+(MP)DrugMedium		200	1
+(HP)DrugLarge		200	1
+(MP)DrugLarge		200	1
+(HP)SDrugBundl		200	1
+(MP)SDrugBundl		200	1
+(HP)MDrugBundl		200	1
+(MP)MDrugBundl		200	1
+(HP)DrugBundle		200	1
+(MP)DrugBundle		200	1

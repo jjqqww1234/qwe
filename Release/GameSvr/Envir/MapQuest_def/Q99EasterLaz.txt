@@ -1,0 +1,21 @@
+; QGO Easter Event 2003
+; Easter Lazarus Function
+[@main]
+
+#IF
+check [780] 1
+#ACT
+break
+
+#IF
+random 5
+check [770] 1
+#ACT
+SET [780] 1
+give R 1
+#SAY
+The mouldy 'thing' smiles as it \
+dies, and you take the small package \
+from its hand as it slowly falls to \
+the ground. \ \
+

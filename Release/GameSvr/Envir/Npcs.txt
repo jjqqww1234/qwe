@@ -1,0 +1,10 @@
+;
+;name                         race      map         x      y      face   body
+;  
+;                             0 (merchant)
+;                             1 (administrator)
+;                             2 (officials of Sabuk wall)
+;
+administrator                 1         0122       29      32      0      8
+SabukOfficer                  2         0150       7       16      0      8
+oldman                        0         3          669     338     0      1

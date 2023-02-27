@@ -1,0 +1,23 @@
+; =============================
+; QGO Easter Patch 2003
+; 9 Apr 2003 - xA1 Mob function
+; =============================
+[@main]
+
+#IF
+check [781] 1
+#ACT
+break
+
+;
+; Players Have killed all previous in sequence
+;
+#IF
+random 5
+check [772] 1
+#ACT
+SET [781] 1
+give Dagger 1
+#SAY
+The monster dies, and as it falls, a Dagger lands \
+into your bag. \ \

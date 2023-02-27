@@ -1,0 +1,95 @@
+1/1   Gold 500
+
+1/1    SunPotion(M)
+1/1    SunPotion(M)
+1/1    SunPotion(M)
+1/1    SunPotion(M)
+1/1    SunPotion(M)
+1/2    SunPotion(M)
+1/2    SunPotion(M)
+1/2    SunPotion(M)
+1/2    SunPotion(M)
+1/2    SunPotion(M)
+1/1    SunPotion
+1/1    SunPotion
+1/1    SunPotion
+1/1    SunPotion
+1/1    SunPotion
+1/1    SunPotion
+1/1    (HP)DrugMedium
+1/1    (HP)DrugMedium
+1/1    (HP)DrugLarge
+1/1    (HP)DrugLarge
+1/1    (HP)DrugLarge
+1/1    (MP)DrugMedium
+1/1    (MP)DrugMedium
+1/1    (MP)DrugLarge
+1/1    (MP)DrugLarge
+1/1    (MP)DrugLarge
+1/2    (HP)DrugLarge
+1/2    (HP)DrugLarge
+1/2    (HP)DrugLarge
+1/2    (MP)DrugLarge
+1/2    (MP)DrugLarge
+1/2    (MP)DrugLarge
+
+1/120  SpiritRing
+1/120  SpiritHelmet
+1/120  SpiritBlade
+
+1/50   HalfMoon
+
+1/30   ImpactDrug 
+1/30   SpiritDrug
+1/30   MagicDrug
+1/30   StormDrug
+
+1/40   TrapHexagon
+1/60   Thunderstorm
+1/60   ShoulderDash
+1/90   MagicShield
+
+1/200  LifeNecklace
+1/200  ClawNecklace
+1/200  RecallHelmet
+
+1/150  SerpentSword
+1/200  MageStaff
+1/200  GreatAxe
+
+1/40   ConvexLens
+1/30   BambooPipe
+1/30   ShamanHelmet
+1/30   PurifierSword
+1/60   CoralRing
+1/30   ExpelRing
+
+1/50   SkeletonHelmet
+1/50   DeathGauntlet
+1/50   PowerAxe
+
+1/10  GoldRing
+1/10  BlueJadeNeckl
+1/10  GoldBracelet
+1/10  MoralRing
+1/10  CharmRing
+
+1/6   MonkBracelet
+1/6   EbonyBracelet
+1/6   KrissSword
+1/6   BlackRing
+1/6   SerpentEyeRing
+1/6   PearlRing
+1/6   PrinceSword
+1/6   MartialSword
+1/6   HoockedSpear
+1/6   IronRing
+1/6   TigerNecklace
+1/6   PlatinNecklace
+1/6   SkeletonRing
+1/6   StrainBracelet
+
+;;From Korea:6month_PatchOne
+1/100   WizardRobe(M)
+1/100   WizardRobe(F)
+1/500   FireBloodSword

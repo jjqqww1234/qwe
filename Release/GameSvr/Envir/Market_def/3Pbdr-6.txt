@@ -1,0 +1,73 @@
+; ===================================
+; Market Def NPC File : 3Pbdr
+; 
+; -----------------------------------
+; Name: James
+; Job: 
+; Map No: 6
+; Pos X 111
+; Pos Y 162
+; File name: *removed*
+; Comment: 
+
+;================================================= =
+;
+
+;Settings
+%100
++10
++11
+
+[@main]
+#IF
+checkpkpoint 2
+#SAY
+I will not help an evil person like you..\ \
+<Ok/@exit>
+
+#ELSEACT
+goto @main-1
+
+
+[@main-1]
+To survive from bloody battles, you need strong armor.\
+You see. You are now here because your armor\
+has been protecting you for long.\
+You can't believe?. Trust me.\ \
+<buy/@buy> protective wearings\
+<sell/@sell> protective wearings\
+<repair/@repair> protective wearings\
+<close/@exit>
+
+
+[@buy]
+Come on! Have a look.\ \
+<back/@main>
+
+[@sell]
+I will pay you good for good quality ones.\ \
+<back/@main>
+
+[@repair]
+Ha!..you used it quite badly..\ \
+<back/@main>
+
+[~@repair]
+It seems repaired fine.\ \
+<back/@main>
+
+[goods]
+;Item		Amount		Time
+BaseDress(M)		100	1	
+BaseDress(F)		100	1
+LightArmor(M)		100	1
+LightArmor(F)		100	1
+HeavyArmor(M)		100	1
+HeavyArmor(F)		100	1
+SoulArmor(M)		100	1
+SoulArmor(F)		100	1
+MagicRobe(M)		100	1
+MagicRobe(F)		100	1
+BronzeHelmet		100	1
+MagicHelmet		100	1
+BrassHelmet		100	1

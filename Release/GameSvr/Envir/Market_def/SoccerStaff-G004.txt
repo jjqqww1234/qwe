@@ -1,0 +1,46 @@
+; ===================================
+; Npc Def NPC File : SoccerStaff-G004
+; 
+; -----------------------------------
+; Name: SoccerStaff
+; Job: 
+; Map No: G004
+; Pos X: 40
+; Pos Y: 40
+; File name: *removed*
+; Comment: 
+
+;================================================= =
+;
+
+[@main]
+#SAY
+Hello. Would you like to play a football match?\
+I'll give you three balls free of charge\
+as long as there is no monster or summoned mob here.\
+But only 3 balls are available.\ \ \
+<Take the ball/@takeball>\
+<Go back/@goback>
+
+[@goback]
+#ACT
+mapmove 0 326 265
+break
+
+[@takeball]
+#IF
+CHECKMONMAP G004 1
+#SAY
+Oh my... there must be monsters or\
+a ball in the field already...\
+This is a sacred place so no monsters should be here.\
+Only 3 balls can be borrowed.\ \ \
+<Close/@exit>
+#ELSEACT
+Param1 G004
+Param2 41
+Param3 41
+MonGen FootBall 3
+#ELSESAY
+Here you go, have fun.\ \ \ \
+<Thanks/@exit>

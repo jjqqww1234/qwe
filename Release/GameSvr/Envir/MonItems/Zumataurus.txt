@@ -1,0 +1,82 @@
+1/1  Gold  4500
+
+1/1    SunPotion(M)
+1/1    SunPotion(M)
+1/1    SunPotion(M)
+1/1    SunPotion(M)
+1/1    SunPotion(M)
+1/1    SunPotion(M)
+1/1    SunPotion(M)
+1/1    SunPotion(M)
+1/1    SunPotion(M)
+1/1    SunPotion(M)
+1/2    SunPotion(M)
+1/2    SunPotion(M)
+1/2    SunPotion(M)
+1/2    SunPotion(M)
+1/2    SunPotion(M)
+1/2    SunPotion(M)
+1/2    SunPotion(M)
+1/1    (HP)DrugLarge
+1/1    (HP)DrugLarge
+1/1    (HP)DrugLarge
+1/1    (HP)DrugLarge
+1/1    (HP)DrugLarge
+1/1    (MP)DrugLarge
+1/1    (MP)DrugLarge
+1/1    (MP)DrugLarge
+1/1    (MP)DrugLarge
+1/1    (MP)DrugLarge
+1/1    (MP)DrugLarge
+
+
+1/5     ZumaRelic
+1/2     BenedictionOil
+
+1/30   ImpactDrug 
+1/30   SpiritDrug
+1/30   MagicDrug
+1/30   StormDrug
+
+1/60     GreenBead
+1/80     GaleNecklace
+1/100    SoulNecklace
+1/100    DemonicBell
+
+1/100     BlackIronHelm
+
+1/100     PowerRing
+1/100    VioletRing
+1/100    TitanRing
+
+1/60     KnightBracelet
+1/100    DragonBrace
+1/100    SoulSpringBrac
+1/80     SteelGlove
+
+;;유니크 아이템
+1/100    RevivalRing
+1/100    ProtectionRing
+1/100    FlameRing
+1/100    RecoveryRing
+1/100    SkillNecklace
+
+;;새로나오는 아이템(최고의목록) 
+1/300    JudgementMace
+1/150    DragonSword
+1/1000    DragonSlayer
+1/300    WarmageStaff
+1/300    SoulSpringWand
+1/300    SoulSabre
+1/250    BloodSword
+
+;;From Korea:6month_PatchOne
+1/10   IronArmor(M)
+1/10   IronArmor(F)
+1/100   SteelArmor(M)
+1/100   SteelArmor(F)
+1/200   TitanArmor(M)
+1/200   TitanArmor(F)
+1/200   DragonRobe(M)
+1/200   DragonRobe(F)
+1/300   ZumaJdgemntMce  

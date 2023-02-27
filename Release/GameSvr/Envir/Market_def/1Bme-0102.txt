@@ -1,0 +1,269 @@
+; ===================================
+; Market Def NPC File : 1Bme-0102
+; Butcher in BichonPrivince (MeatStore)
+; -----------------------------------
+; Name: Kim
+; Job: Butcher
+; Map No: 0102
+; Pos X 9
+; Pos Y 7
+; File name: *removed*
+; Comment: Butcher in BichonProvince (MeatStore)
+
+;================================================= =
+;
+
+;Settings
+%100
++40
++1
+
+
+;Pkr Tag (NPC won't talk to Pkrs)
+[@main]
+#IF
+checkpkpoint 2
+#SAY
+I will not help an evil person like you... \ \
+<Ok/@exit>
+
+#ELSEACT
+goto @main-1
+break
+
+
+[@main-1]
+#IF
+CHECKLEVEL 50
+#ACT
+goto @level50check
+break
+#ELSEACT
+goto @main-2
+break
+
+[@level50check]
+#IF
+CHECK [195] 1
+#ACT
+goto @main-2
+break
+
+#IF
+CHECK [194] 1
+#ACT
+goto @level50part4
+break
+
+#IF
+CHECK [193] 1
+#ACT
+goto @level50part3recheck
+break
+
+#IF
+CHECK [192] 1
+#ACT
+goto @level50part3
+break
+#ELSEACT
+goto @main-2
+break
+
+[@level50part3]
+#SAY
+Ah Khera, the lady well known for making nice 'Meat Soup'\
+tut tut... If it just wasn't for her husband,\
+she would have a nice big restaurant of her own now.\
+Since I started this job, I've never seen anyone as good as\
+her in flavoring Meat Soup.\ \
+(Her husband?... <what has happened to him?/@level50part3-2> )
+
+[@level50part3-2]
+#ACT
+GIVE KimsMeatSoup 1
+SET [193] 1
+#SAY
+By the way, since you are here now,\
+can you deliver this Meat Soup to Khera?\
+Don't tell her who you got it from, but just let her taste it.\
+Will you do it, please? \ \ \
+<I will give it to her/@exit> on the way.
+
+[@level50part4]
+#ACT
+give gold 10000
+SET [195] 1
+#SAY
+Thanks for delivering that Meat soup to Khera for me\
+Take this 10,000 gold as a gift to say thank you.\ \ \
+"Thanks, <Goodbye/@exit>
+
+[@level50part3recheck]
+#IF
+Checkitem KimsMeatSoup 1
+#SAY
+Can you deliver this Meat Soup to Khera?\
+Don't tell her who you got it from, but just let her taste it.\
+Will you do it, please? \ \ \
+<I will give it to her/@exit> on the way.
+#ELSEACT
+GIVE KimsMeatSoup 1
+#ELSESAY
+can you deliver this Meat Soup to Khera?\
+Don't tell her who you got it from, but just let her taste it.\
+Will you do it, please? \ \ \
+<I will give it to her/@exit> on the way.
+
+[@main-2]
+#IF
+random 2
+#ACT
+goto @QUEST
+#ELSEACT
+goto @normal
+
+[@normal]
+Welcome, what can I do for you?\ \
+<Buy/@buy> Meat\
+<Sell/@sell> Meat\
+<Get/@Tmove> Out\
+<Cancel/@exit>
+
+[@Tmove]
+#IF
+random 2
+#ACT
+mapmove 0 307 264
+break
+
+#IF
+random 2
+#ACT
+mapmove 0 308 265
+break
+
+#ELSEACT
+goto @Tmove
+
+[@QUEST]
+#IF 
+check [312] 1
+#ACT
+goto @Q312
+break
+
+#IF
+check [310] 1
+#ACT
+goto @Q310
+break 
+
+#IF
+check [309] 1
+#ACT
+goto @Q309
+break
+
+#IF
+check [305] 1
+#ACT
+goto @Q305
+break 
+
+#IF
+check [304] 1
+#ACT
+goto @Q304
+#ELSESAY
+Welcome, what can I do for you?\ \
+<Buy/@buy> Meat\
+<Sell/@sell> Meat\
+<Cancel/@exit>
+
+[@Q304]
+You come here after hearing Rupert's remark...\
+Welcome.... I have a request from you\
+I know you are a good person since I heard\
+about you from Rupert. Could you do me a favor?\ \
+<Accept/@Q304_1> Request\
+<Reject/@exit> Request
+
+
+[@Q304_1]
+#IF
+#ACT
+SET [305] 1
+#SAY
+Thank you for accepting my request...\ 
+Rupert asked me to make a good meat dish\
+and he gave me high quality meat and chicken...\
+But a good cook might be necessary for making a good meat dish\
+Could you please look for a cook for me?\ \
+<ok/@exit>
+
+[@Q305]
+#IF
+#SAY
+Please find me that cook!
+<Ok/@exit>
+
+[@Q309]
+#IF
+check [309] 1
+#SAY
+I really admire you!\
+You found that cook...\
+He contacted me and said to make that delicious dish\ 
+he needs a special oil.\ \
+<Next/@Q309_1>
+
+
+[@Q309_1]
+#IF
+#ACT
+SET [310] 1
+#SAY
+Unfortunatly, I don't know how to make this special oil...\
+I heard that once, in Bichon lived an expert in this matter,\
+who is now a very old person... You have to look for him\
+But, I'm sorry, I don't know exactly where he is now\ \
+<I'll look for him/@exit>
+
+
+[@Q310]
+#IF
+#SAY
+Please find this person as soon as possible..\ \
+<Ok/@exit>
+
+
+
+[@Q312]
+#IF
+#ACT
+SET [313] 1
+#SAY
+Something came from that old person...\ 
+I gave that object to Rupert after asking him to cook the dish,\
+go to Rupert then.\ \
+<Ok/@exit>
+
+
+
+[@buy]
+Please choose what you want to buy.\ \ \
+<Back/@main>
+
+
+[@sell]
+If you have high quality meat please sell it to me\
+I'll pay well for it\ \
+<Back/@main>
+
+
+
+[goods]
+;Item		Amount		Time
+Meat     1000            1
+Chicken  1000            1 

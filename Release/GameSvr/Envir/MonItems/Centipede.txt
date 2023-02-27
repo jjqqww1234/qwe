@@ -1,0 +1,59 @@
+1/6  Gold 400
+1/10000 Gold  5000
+
+1/40   SunPotion
+
+1/20000 ImpactDrug 
+
+1/5000  HeavyArmor(M)
+1/5000  HeavyArmor(F)
+1/5000  SoulArmor(M)
+1/5000  SoulArmor(F)
+1/5000  MagicRobe(M)
+1/5000  MagicRobe(F)
+1/5000  GoldRing
+1/5000  BlueJadeNeckl
+1/5000  GoldBracelet
+1/5000  MoralRing
+1/5000  CharmRing
+
+1/2500   MonkBracelet
+1/2500   EbonyBracelet
+1/2500   KrissSword
+1/2500   BlackRing
+1/2500   SerpentEyeRing
+1/2500   PearlRing
+1/2500   PrinceSword
+1/2500   MartialSword
+1/2500   HoockedSpear
+1/2500   IronRing
+1/2500   TigerNecklace
+1/2500   PlatinNecklace
+1/2500   SkeletonRing
+1/2500   StrainBracelet
+
+1/1200   HoockedSword
+1/1200   Scimitar
+1/1200   Trident
+1/1200   BlueRing
+1/1200   NagaNecklace
+1/1200   AmberNecklace
+1/1200   PhoenixBead
+1/1200   HardGlove
+1/1200   MagicBracelet
+1/1200   LanternNeckl
+
+1/500    IronSword
+1/500    ShortSword
+1/500    BronzeHelmet
+1/500    LightArmor(M)
+1/500    LightArmor(F)
+1/500    BronzeAxe
+1/500    EbonyNecklace
+1/500    YellowNecklace
+1/500    BlackNecklace
+1/500    MagicHelmet
+
+;;From Korea:6month_PatchOne
+1/2000   WizardRobe(M)
+1/2000   WizardRobe(F)

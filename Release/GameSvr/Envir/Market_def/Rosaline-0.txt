@@ -1,0 +1,43 @@
+; ===================================
+; Market Def NPC File : Rosaline-0
+; 
+; -----------------------------------
+; Name: Rosaline
+; Job: 
+; Map No: 0
+; Pos X 328
+; Pos Y 261
+; Comment: Easter Event Npc
+
+;================================================= =
+;
+
+[@main]
+#IF
+checkitem GoldEgg
+#Say
+You already have it.\
+After eating an egg, come again.\
+Then I will give you one more.\
+<Close/@exit>
+#ELSESAY
+Hi, My name is Rosaline.\
+Easter egg implies that even through eggs seem to be dead,\
+it has a life inside for the chickens are hatched out.\
+Namely it means the revival of life.\
+That's why people decorates eggs and eat them together at Easter.\
+For Easter, I will hand out golden eggs to everyone.\
+You can get it only one at a time.\
+After eating it, come again.\
+<Get a golden egg./@getegg>          <Stop/@exit>
+
+[@getegg]
+#ACT
+giveitem GoldEgg
+#SAY
+After eating an egg, come again.\
+Then I will give you one more.\
+<Close/@exit>
+
+
+

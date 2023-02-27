@@ -1,0 +1,64 @@
+1/1 Gold 1000 
+1/1 Gold 2000 
+
+1/15 HoockedSpear 
+1/15 KrissSword 
+1/15 MartialSword 
+1/15 PrinceSword 
+1/30 PowerAxe 
+1/50 Purifier 
+
+1/70 SkeletonHelmet 
+1/70 ShamanHelmet 
+
+1/40 MoralRing 
+1/40 CharmRing 
+1/40 SkeletonRing 
+
+1/50 BluejadeNeckl 
+1/70 BambooPipe 
+1/70 ConvexLens 
+
+1/50 GoldBracelet 
+
+1/240 MageStaff 
+1/240 GreatAxe 
+1/240 SerpentSword 
+1/480 DragonSword 
+
+
+1/240 FlamingSword 
+1/240 SummonShinsu 
+1/240 IceStorm 
+
+1/120 CoralRing 
+1/120 ExpelRing 
+1/480 PlatinumRing 
+1/480 RubyRing 
+1/480 DragonRing 
+1/360 GaleRing 
+
+1/480 LifeNecklace 
+
+1/480 SpellBracelet 
+1/480 3rdEyeBracer 
+
+
+1/57600 JudgementMace 
+1/57600 SoulSpringWand 
+1/28800 BloodSword 
+1/72000 WarMageStaff 
+
+1/2880 BlackIronHelm 
+
+1/2880 PearlNecklace 
+
+1/5760 PowerRing 
+1/5760 VioletRing 
+1/5760 TitanRing 
+1/5760 RecoveryRing 
+1/5760 FlameRing 
+
+1/5760 SoulSpringBrac 
+1/5760 KnighBracelet 
+1/5760 DragonBrace 

@@ -1,0 +1,38 @@
+; =============================
+; QGO Easter Event 2003
+; 9 Apr 2003 - xA4 Mob function
+; =============================
+[@main]
+
+#IF
+check [784] 1
+#ACT
+break
+
+#IF
+check [783] 0
+#ACT
+break
+
+#IF
+check [782] 0
+#ACT
+break
+
+#IF
+check [781] 0
+#ACT
+break
+
+;
+; Players Have killed all previous in sequence
+;
+#IF
+random 2
+check [772] 1
+#ACT
+SET [784] 1
+give IronBracer 1
+#SAY
+The monster dies, and as it falls, a Bracelet lands \
+into your bag. \ \

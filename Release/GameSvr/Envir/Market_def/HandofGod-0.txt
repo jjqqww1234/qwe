@@ -1,0 +1,50 @@
+; ===================================
+; Market Def NPC File : HandofGod-0
+; 
+; -----------------------------------
+; Name: HandofGod
+; Job: 
+; Map No: 0
+; Pos X 327
+; Pos Y 267
+; File name: *removed*
+; Comment: Special repairs all weapons and items
+
+;================================================= =
+;
+
+;Settings
+%100
++5
++6
++10
++11
++20
++19
++21
++22
++23
++24
++26
++52
++54
+
+
+[@main]
+Hello, my name is Ryan and i'm a master artisan,\
+I'm part of the guild known as HandOfGod because of my unsurpassed\
+skills in handling special repair for seceral different\
+kind of items and weapons. I will be staying here with my\
+fellow brothers for a while, do you need my help maybe?\
+<Special Repair items/@s_repair>
+
+
+[@s_repair]
+Hey guy! You are very lucky...\
+We have material to do special repairs,\
+Instead, please keep in mind that the price\
+would be 3 times higher than normal price.\ \
+<back/@main>
+
+
+

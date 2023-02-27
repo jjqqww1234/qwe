@@ -1,0 +1,18 @@
+; ===================================
+; Npc Def NPC File : LeftNpc-hell00
+; 
+; -----------------------------------
+; Name: Banner
+; Job: 
+; Map No: hell00
+; Pos X 61
+; Pos Y 85
+; File name: *removed*
+; Comment:
+
+;================================================= =
+;
+
+[@main]
+#SAY
+Needs to be written

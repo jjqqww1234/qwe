@@ -1,0 +1,6 @@
+MOBNAME=
+ITEMNAME=몹이 떨굴 아이템 이름 ( 최대길이 = 14 )
+SELPOINT=떨굴 확률의 분자 ( SELPOINT/MAXPOINT ) 0이 되면 안됨
+MAXPOINT=떨굴 확률의 분모 ( SELPOINT/MAXPOINT ) 0이 되면 안됨
+COUNT=몇굴 갯수의 확률 최대값 
+DROPCOUNT=떨굴 횟수 설정  ( 적용안됨)

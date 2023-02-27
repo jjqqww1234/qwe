@@ -1,0 +1,25 @@
+1/4     Gold  100
+1/10000 Gold  1000
+
+1/1200    BronzeSword
+1/1200    ThinBracelet
+1/1200    GlassRing
+1/1200    HexagonalRing
+1/1200    LeatherGlove
+1/1200    SilverBracelet
+1/1200    SteelBracelet
+1/1200    HornRing
+1/1200    LargeBracelet
+
+1/600    BaseDress(M)
+1/600    BaseDress(F)
+1/600    WoodenSword
+1/600    Dagger
+1/600    EbonySword
+1/600    GoldNecklace
+1/600    CopperRing
+1/600    IronBracer
+1/600    PrecisionNeckl
+
+;;From Korea:6month_PatchOne
+1/1000   SteelAxe

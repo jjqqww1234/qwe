@@ -1,0 +1,66 @@
+; ===================================
+; Market Def NPC File : 2Pbwe-6
+; 
+; -----------------------------------
+; Name: Dustin
+; Job: 
+; Map No: 6
+; Pos X 105
+; Pos Y 137
+; File name: *removed*
+; Comment: 
+
+;================================================= =
+;
+
+;Settings
+%100
++5
++6
++43
+
+[@main]
+#IF
+checkpkpoint 2
+#SAY
+I will not help an evil person like you..\ \
+<Ok/@exit>
+
+#ELSEACT
+goto @main-1
+
+
+[@main-1]
+Welcome! We have wide array of best weapons.\
+Consider yourself very lucky because you can\
+buy some weapons you can't get from anywhere else.\ \
+<buy weapon/@buy>\
+<sell weapon/@sell>\
+<repair weapon/@repair>\
+<do special repair/@s_repair>\
+<close/@exit>
+
+[@buy]
+Please choose what you want to buy.\ \
+<back/@main>
+
+[@sell]
+Please place the weapon you want to sell.\ \
+<back/@main>
+
+[@repair]
+Hmmmm...It is so damaged...\ \
+<Back/@main>
+
+[~@repair]
+It seems in good condition now.\ \
+<back/@main>
+
+
+[goods]
+;Item		Amount		Time
+WoodenSword     100         	1
+BronzeSword	100		1 
+IronSword	100		1
+ShortSword 	100		1
+SteelAxe	100		1

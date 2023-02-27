@@ -1,0 +1,36 @@
+1/3  Gold 200
+
+1/10000  StaminaAid
+
+1/2000   HoockedSword
+1/2000   Scimitar
+1/2000   Trident
+1/2000   SteelSword
+1/2000   BlueRing
+1/2000   NagaNecklace
+1/2000   AmberNecklace
+1/2000   PhoenixBead
+1/2000   HardGlove
+1/2000   MagicBracelet
+1/2000   LanternNeckl
+
+1/1000   IronSword
+1/1000   ShortSword
+1/1000   BronzeHelmet
+1/1000   LightArmor(M)
+1/1000   LightArmor(F)
+1/1000   BronzeAxe
+1/1000   EbonyNecklace
+1/1000   YellowNecklace
+1/1000   BlackNecklace
+1/1000   MagicHelmet
+
+1/500   BronzeSword
+1/500   ThinBracelet
+1/500   GlassRing
+1/500   HexagonalRing
+1/500   LeatherGlove
+1/500   SilverBracelet
+1/500   SteelBracelet
+1/500   HornRing
+1/500   LargeBracelet

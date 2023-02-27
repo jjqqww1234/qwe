@@ -1,0 +1,106 @@
+; ===================================
+; Npc Def NPC File : Mr.Torre-0
+; 
+; -----------------------------------
+; Name: Mr.Torre
+; Job: 
+; Map No: 0
+; Pos X 
+; Pos Y 
+; File name: *removed*
+; Comment:
+
+;================================================= =
+;
+
+
+[@main]
+Hello. I'm Mr.Torre\
+Do you know this year is the Golden-pig's year\
+which comes in every 600 years?\
+Celebrating it, Lucky 3 pig brothers will come to Mir land\
+for a week. So I have a favor to ask you.\
+Could you help me?\\
+<Sure. What is it?/@next>\
+<Sorry. I'm too busy to help you./@exit>
+
+
+[@next]
+Catch Lucky pig, and bring me the pig head.\
+There will be a lot of festival this year.\
+We need some pig head for the banquet.\
+If you bring it to me, I will give you something as a reward.\
+Also LuckyLottery will be dropped by Lucky pig.\
+When you have got a lottery. go to Katrina.\
+<Give them to him/@give>\
+<Ask about reward/@ask>\
+<I'll do it./@exit>
+
+
+[@ask]
+Reward item depends on the number of\
+pig head : 1, 10, 50, 100\
+The more, the better.\
+<Previous/@next>\
+<Thanks./@exit>
+
+
+[@give]
+You can choose your reward item.\
+It depends on the number of Luck pig head.\\
+And it will be dropped randomly.\
+<LuckPigHead 1/@lucky1>\
+<LuckPigHead 10/@lucky10>\
+<LuckPigHead 50/@lucky50>\
+<LuckPigHead 100/@lucky100>\
+<Stop./@exit>
+
+
+[@lucky1]
+#IF
+checkitem LuckyPigHead 1
+#ACT
+Take LuckyPigHead 1
+Give (HP)DrugBundle
+Give (MP)DrugBundle
+#ELSESAY
+You do not have 1 Lucky pig head\
+Come back to me when you do.\
+<Close/@exit>
+
+
+[@lucky10]
+#IF
+checkitem LuckyPigHead 10
+#ACT
+Take LuckyPigHead 10
+Give WargodOil 1
+#ELSESAY
+You do not have 10 Lucky pig head\
+Come back to me when you do.\
+<Close/@exit>
+
+
+[@lucky50]
+#IF
+checkitem LuckyPigHead 50
+#ACT
+Take LuckyPigHead 50
+Give BenedictionOil 1
+#ELSESAY
+You do not have 50 Lucky pig head\
+Come back to me when you do.\
+<Close/@exit>
+
+
+[@lucky100]
+#IF
+checkitem LuckyPigHead 100
+#ACT
+Take LuckyPigHead 100
+Give GoldBar 1
+#ELSESAY
+You do not have 100 Lucky pig head\
+Come back to me when you do.\
+<Close/@exit>
+

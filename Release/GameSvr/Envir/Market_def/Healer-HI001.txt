@@ -1,0 +1,23 @@
+; ===================================
+; Market Def NPC File : Healer-HI001
+; HiddenPlace
+; -----------------------------------
+; Name: Healer
+; Job: 
+; Map No: HI001
+; Pos X
+; Pos Y
+; File name: *removed*
+; Comment: HiddenPlace
+
+;================================================= =
+;
+
+[@main]
+#ACT
+HEALING 1000
+#SAY
+Are yOU exhausted with tough hunting?\
+I will restore your health.\
+Visit me anytime for your health restoration\ \
+<Close/@exit>

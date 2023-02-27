@@ -1,0 +1,28 @@
+; ===================================
+; Market Def NPC File : 6Wgs-11
+; TaoTown
+; -----------------------------------
+; Name: GoldSafe
+; Job: 
+; Map No: 11
+; Pos X 181
+; Pos Y 302
+; File name: *removed*
+; Comment: TaoTown
+
+;================================================= =
+;
+
+;Settings
+%100
+
+
+[@main]
+How can I help you?\
+This is where you can keep your gold safe.\
+You will only be able to store a minimum of\
+1,000,000 Gold here call back again when i'm\
+ready todo business thanks.\ \
+<Close/@exit>
+
+

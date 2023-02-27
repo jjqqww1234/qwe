@@ -1,0 +1,37 @@
+1/4   Gold 250
+1/15  (HP)DrugSmall
+1/25  (MP)DrugSmall
+
+1/20000  StaminaAid
+
+1/1800   HoockedSword
+1/1800   Scimitar
+1/1800   Trident
+1/1800   SteelSword
+1/1800   BlueRing
+1/1800   NagaNecklace
+1/1800   AmberNecklace
+1/1800   HardGlove
+1/1800   MagicBracelet
+1/1800   LanternNeckl
+
+1/900   IronSword
+1/900   ShortSword
+1/900   BronzeHelmet
+1/900   LightArmor(M)
+1/900   LightArmor(F)
+1/900   BronzeAxe
+1/900   EbonyNecklace
+1/900   YellowNecklace
+1/900   BlackNecklace
+1/900   MagicHelmet
+
+1/400   BronzeSword
+1/400   ThinBracelet
+1/400   GlassRing
+1/400   HexagonalRing
+1/400   LeatherGlove
+1/400   SilverBracelet
+1/400   SteelBracelet
+1/400   HornRing
+1/400   LargeBracelet

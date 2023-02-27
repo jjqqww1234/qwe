@@ -1,0 +1,25 @@
+1/4   Gold 450
+
+
+1/70  DragonRing
+1/70  RubyRing
+1/70  PlatinumRing
+
+1/15  GoldRing
+1/15  BlueJadeNecklace
+1/15  GoldBracelet
+1/15  MoralRing
+1/15  CharmRing
+
+1/300  RedOrchidRing
+1/300  RedOrchidNeckl
+1/300  RedOrchidBrac
+
+1/300  RedFlowerBrac
+1/300  RedFlowerNeckl
+1/300  RedFlowerRing
+
+;;From Korea:6month_PatchOne
+1/30000   TitanArmor(M)
+1/30000   TitanArmor(F)
+1/10000   HelmetOfHero

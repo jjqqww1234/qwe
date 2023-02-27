@@ -1,0 +1,19 @@
+; QGO Easter Event 2003
+; 9 Apr 2003 Easter Chick Function
+[@main]
+
+#IF
+check [775] 1
+#ACT
+break
+
+#IF
+random 10
+check [770] 1
+#ACT
+SET [775] 1
+give E 1
+#SAY
+Aww... how sad - but wait, with \
+it's dying breath, the chick \
+gives you something... \ \

@@ -1,0 +1,716 @@
+; ===================================
+; Market Def NPC File : 11Picft-0
+; 
+; -----------------------------------
+; Name: CraftsLady
+; Job: 
+; Map No: 0
+; Pos X 319
+; Pos Y 276
+; File name: *removed*
+; Comment:
+
+;================================================= =
+;
+
+;Settings
+%100
++5
++6
++43
++37
+
+[@main]
+#SAY
+Choose the item you want to make.\ \
+<Food item/@makefood>                            <Potion/@makepotion>\
+<Gem item/@makegem>                            <Other item/@makeitem>\
+<Exclusive for making/@makeetc>         <Stuff item/@makestuff>\
+<Ask/@ask> the lady more information about crafting\
+
+[@makefood]
+Choose the food you want to cook.\ \
+<Previous screen/@main>
+
+[@makepotion]
+Choose the potion you want to create.\ \
+<Previous screen/@main>
+
+[@makegem]
+You can succeed to make a gem most of the times,\
+but it could also fail... so be careful.\
+Choose the gem you want to craft.\ \
+<Previous screen/@main>
+
+[@makeitem]
+Choose the item you want to make.\ \
+<Previous screen/@main>
+
+[@makeetc]
+Choose the item you want to craft.\ \
+<Previous screen/@main>
+
+[@makestuff]
+What item do you want to make?\ \
+<Previous screen/@main>
+
+
+[@ask]
+#SAY
+I am craft lady, specialized in the creation of new items.\
+I have been sent here to check the living conditions of people.\
+Unfortunately, it seems that many people are still suffering from\
+poverty. So, I would like to help them with my making skills.\
+If you also want anything to be made, you may as well ask me.\ \
+<Previous screen/@main>
+
+[@Dumpling]
+To craft this item you will need:\
+1x Meat\
+1x Ginseng\
+1x (HP)DrugLarge\
+<Main/@main>
+
+[@BeefDumpling]
+To craft this item you will need:\
+1x Jerk\
+1x Ginseng\
+1x Sunpotion\
+<Main/@main>
+
+[@ChickenDumplng]
+To craft this item you will need:\
+1x Chicken\
+1x Ginseng\
+1x Sunpotion\
+<Main/@main>
+
+[@EggDumpling]
+To craft this item you will need:\
+1x SkystingerEgg\
+1x Ginseng\
+1x Sunpotion\
+<Main/@main>
+
+[@BoneDumpling]
+To craft this item you will need:\
+1x Bone\
+1x Ginseng\
+1x Sunpotion\
+<Main/@main>
+
+[@HerbalTea]
+To craft this item you will need:\
+1x CannibalFruit\
+3x CannibalLeaf\
+1x Sunpotion\
+<Main/@main>
+
+[@MeatSoup]
+To craft this item you will need:\
+1x Meat\
+1x Ginseng\
+1x StaminaAidDrug\
+<Main/@main>
+
+[@ZerkSoup]
+To craft this item you will need:\
+1x Jerk\
+1x Ginseng\
+1x MagicAidDrug\
+<Main/@main>
+
+[@ChickenBroth]
+To craft this item you will need:\
+1x Chicken\
+1x Ginseng\
+1x ImpactDrug\
+<Main/@main>
+
+[@EggBroth]
+To craft this item you will need:\
+1x SkystingerEgg\
+1x Ginseng\
+1x MagicDrug\
+<Main/@main>
+
+[@BoneBroth]
+To craft this item you will need:\
+1x Bone\
+1x Ginseng\
+1x SpiritDrug\
+<Main/@main>
+
+[@CaniblFruitTea]
+To craft this item you will need:\
+1x BugLeg\
+3x CannibalFruit\
+1x SunPotion(M)\
+<Main/@main>
+
+[@(HP)DrugXL]
+To craft this item you will need:\
+1x (HP)DrugLarge\
+2x CannibalLeaf\
+1x EbonyFruit\
+<Main/@main>
+
+[@(MP)DrugXL]
+To craft this item you will need:\
+1x (MP)DrugLarge\
+1x CannibalFruit\
+1x Mushroom\
+<Main/@main>
+
+[@(HP)DrugBundXL]
+To craft this item you will need:\
+1x (HP)DrugBundle\
+12x CannibalLeaf\
+6x EbonyFruit\
+<Main/@main>
+
+[@(MP)DrugBundXL]
+To craft this item you will need:\
+1x (MP)DrugBundle\
+6x CannibalFruit\
+6x Mushroom\
+<Main/@main>
+
+[@BraveryGem]
+To craft this item you will need:\
+1x Platinum Purity 12+\
+1x Nephrite Purity 12+\
+1x Any Accessory\
+1x Any Stone\
+<Main/@main>
+
+[@MagicGem]
+To craft this item you will need:\
+1x Platinum Purity 12+\
+1x Nephrite Purity 12+\
+1x Any Accessory\
+1x Any Stone\
+<Main/@main>
+
+[@SoulGem]
+To craft this item you will need:\
+1x Platinum Purity 12+\
+1x Nephrite Purity 12+\
+1x Any Accessory\
+1x Any Stone\
+<Main/@main>
+
+[@ProtectionGem]
+To craft this item you will need:\
+1x GoldOre Purity 12+\
+1x BlackIronOre Purity 12+\
+1x Any Accessory\
+1x Any Stone\
+<Main/@main>
+
+[@EvilSlayerGem]
+To craft this item you will need:\
+1x GoldOre Purity 12+\
+1x BlackIronOre Purity 12+\
+1x Any Accessory\
+1x Any Stone\
+<Main/@main>
+
+[@DurabilityGem]
+To craft this item you will need:\
+1x GoldOre Purity 12+\
+1x BlackIronOre Purity 12+\
+1x Any Stone\
+<Main/@main>
+
+[@StormGem]
+To craft this item you will need:\
+1x Platinum Purity 15+\
+1x GoldOre Purity 15+\
+5x WindMarble\
+1x Any Stone\
+<Main/@main>
+
+[@AgilityGem]
+To craft this item you will need:\
+1x Platinum Purity 15+\
+1x GoldOre Purity 15+\
+5x EvasionMarble\
+1x Any Stone\
+<Main/@main>
+
+[@AccuracyGem]
+To craft this item you will need:\
+1x Platinum Purity 15+\
+1x GoldOre Purity 15+\
+5x FocusMarble\
+1x Any Stone\
+<Main/@main>
+
+[@PoisonGem]
+To craft this item you will need:\
+1x Platinum Purity 15+\
+1x GoldOre Purity 15+\
+5x PoisonMarble\
+1x Any Stone\
+<Main/@main>
+
+[@FreezingGem]
+To craft this item you will need:\
+1x Platinum Purity 15+\
+1x GoldOre Purity 15+\
+5x IceMarble\
+1x Any Stone\
+<Main/@main>
+
+[@DisillusionGem]
+To craft this item you will need:\
+1x Platinum Purity 15+\
+1x GoldOre Purity 15+\
+5x WillMarble\
+1x Any Stone\
+<Main/@main>
+
+[@EnduranceGem]
+To craft this item you will need:\
+1x Platinum Purity 15+\
+1x GoldOre Purity 15+\
+5x AntidoteMarble\
+1x Any Stone\
+<Main/@main>
+
+[@PeddlerTorch]
+To craft this item you will need:\
+1x RedThread\
+1x Bone\
+1x Candle\
+1x RepairOil\
+<Main/@main>
+
+[@SewingGoods]
+To craft this item you will need:\
+3x WhiteThread\
+1x LargeBone\
+2x IronOre\
+<Main/@main>
+
+[@BoneHammer]
+To craft this item you will need:\
+3x BlackThread\
+1x LargeBone\
+2x CopperOre\
+<Main/@main>
+
+[@String]
+To craft this item you will need:\
+3x WhiteThread\
+3x RedThread\
+3x BlackThread\
+<Main/@main>
+
+[@BoneDecapitatr]
+To craft this item you will need:\
+20x Bone\
+10x SpiderWeb\
+1x IronSword\
+1x CopperOre\
+<Main/@main>
+
+[@BoneHood]
+To craft this item you will need:\
+20x Bone\
+10x SpiderWeb\
+1x MagicHelmet\
+1x CopperOre\
+<Main/@main>
+
+[@BoneRobe(M)]
+To craft this item you will need:\
+30x Bone\
+20x SpiderWeb\
+1x MagicHelmet\
+1x CopperOre\
+<Main/@main>
+
+[@BoneRobe(F)]
+To craft this item you will need:\
+30x Bone\
+20x SpiderWeb\
+1x MagicHelmet\
+1x CopperOre\
+<Main/@main>
+
+[@BugNecklace]
+To craft this item you will need:\
+20x BugEye\
+15x SpiderWeb\
+1x WarriorNecklce\
+1x SilverOre\
+<Main/@main>
+
+[@BugRing]
+To craft this item you will need:\
+10x Mandible\
+15x SpiderWeb\
+1x SerpentEyeRing\
+1x SilverOre\
+<Main/@main>
+
+[@BugBracelet]
+To craft this item you will need:\
+15x BugLeg\
+15x SpiderWeb\
+1x SilverOre\
+<Main/@main>
+
+[@WhiteGoldBelt]
+To craft this item you will need:\
+15x WhiteThread\
+20x BugShell\
+1x BronzeBelt\
+1x Platinum\
+<Main/@main>
+
+[@WhiteGoldShoes]
+To craft this item you will need:\
+15x WhiteThread\
+20x BugShell\
+1x SilkBoots\
+1x Platinum\
+<Main/@main>
+
+[@WhiteGoldNeckl]
+To craft this item you will need:\
+10x WhiteThread\
+50x BugEye\
+1x NagaNecklace\
+1x Platinum\
+<Main/@main>
+
+[@WhiteGoldBrace]
+To craft this item you will need:\
+10x WhiteThread\
+50x BugLeg\
+1x StrainBracelet\
+1x Platinum\
+<Main/@main>
+
+[@WhiteGoldRing]
+To craft this item you will need:\
+10x WhiteThread\
+50x Mandible\
+1x BlueRing\
+1x Platinum\
+<Main/@main>
+
+[@RedJadeBelt]
+To craft this item you will need:\
+15x RedThread\
+20x BugShell\
+1x BronzeBelt\
+1x Ruby\
+<Main/@main>
+
+[@RedJadeShoes]
+To craft this item you will need:\
+10x RedThread\
+20x BugShell\
+1x SilkBoots\
+1x Ruby\
+<Main/@main>
+
+[@RedJadeNeckl]
+To craft this item you will need:\
+10x RedThread\
+50x BugEye\
+1x AmberNecklace\
+1x Ruby\
+<Main/@main>
+
+[@RedJadeBrace]
+To craft this item you will need:\
+10x RedThread\
+50x BugLeg\
+1x EbonyBracelet\
+1x Ruby\
+<Main/@main>
+
+[@RedJadeRing]
+To craft this item you will need:\
+10x RedThread\
+50x Mandible\
+1x IronRing\
+1x Ruby\
+<Main/@main>
+
+[@NephriteBelt]
+To craft this item you will need:\
+15x BlackThread\
+20x BugShell\
+1x BronzeBelt\
+1x Nephrite\
+<Main/@main>
+
+[@NephriteShoes]
+To craft this item you will need:\
+15x BlackThread\
+20x BugShell\
+1x SilkBoots\
+1x Nephrite\
+<Main/@main>
+
+[@NephriteNeckl]
+To craft this item you will need:\
+10x BlackThread\
+50x BugEye\
+1x JadeNecklace\
+1x Nephrite\
+<Main/@main>
+
+[@NephriteBrace]
+To craft this item you will need:\
+10x BlackThread\
+50x BugLeg\
+1x MonkBracelet\
+1x Nephrite\
+<Main/@main>
+
+[@NephriteRing]
+To craft this item you will need:\
+10x BlackThread\
+50x Mandible\
+1x WhiteJadeRing\
+1x Nephrite\
+<Main/@main>
+
+[@WhiteGldBlt(H)]
+To craft this item you will need:\
+80x LargeBone\
+120x WhiteThread\
+1x WhiteGoldBelt\
+2x Platinum\
+<Main/@main>
+
+[@WhitGldShoe(H)]
+To craft this item you will need:\
+60x LargeBone\
+90x WhiteThread\
+1x WhiteGoldShoes\
+2x Platinum\
+<Main/@main>
+
+[@WhiteGldNec(H)]
+To craft this item you will need:\
+55x LargeBone\
+80x WhiteThread\
+1x WhiteGoldNecklace\
+2x Platinum\
+<Main/@main>
+
+[@WhiteGldBra(H)]
+To craft this item you will need:\
+40x LargeBone\
+80x WhiteThread\
+1x WhiteGoldBracelet\
+2x Platinum\
+<Main/@main>
+
+[@WhiteGldRng(H)]
+To craft this item you will need:\
+40x LargeBone\
+80x WhiteThread\
+1x WhiteGoldRing\
+2x Platinum\
+<Main/@main>
+
+[@RedJadeBelt(H)]
+To craft this item you will need:\
+80x LargeBone\
+120x RedThread\
+1x RedJadeBelt\
+2x Ruby\
+<Main/@main>
+
+[@RedJadeShoe(H)]
+To craft this item you will need:\
+60x LargeBone\
+90x RedThread\
+1x RedJadeShoes\
+2x Ruby\
+<Main/@main>
+
+
+[@RedJadeNeck(H)]
+To craft this item you will need:\
+55x LargeBone\
+80x RedThread\
+1x RedJadeNecklace\
+2x Ruby\
+<Main/@main>
+
+[@RedJadeBrac(H)]
+To craft this item you will need:\
+40x LargeBone\
+80x RedThread\
+1x RedJadeBracelet\
+2x Ruby\
+<Main/@main>
+
+[@RedJadeRing(H)]
+To craft this item you will need:\
+40x LargeBone\
+80x RedThread\
+1x RedJadeRing\
+2x Ruby\
+<Main/@main>
+
+[@NephriteBelt(H)]
+To craft this item you will need:\
+80x LargeBone\
+120x BlackThread\
+1x NephriteBelt\
+2x Nephrite\
+<Main/@main>
+
+[@NephritShoe(H)]
+To craft this item you will need:\
+60x LargeBone\
+90x BlackThread\
+1x NephriteShoes\
+2x Nephrite\
+<Main/@main>
+
+[@NephritNeck(H)]
+To craft this item you will need:\
+55x LargeBone\
+80x BlackThread\
+1x NephriteNecklace\
+2x Nephrite\
+<Main/@main>
+
+[@NephritBrac(H)]
+To craft this item you will need:\
+40x LargeBone\
+80x BlackThread\
+1x NephriteBracelet\
+2x Nephrite\
+<Main/@main>
+
+[@NephritRing(H)]
+To craft this item you will need:\
+40x LargeBone\
+80x BlackThread\
+1x NephriteRing\
+2x Nephrite\
+<Main/@main>
+
+[@LargeBone]
+To craft this item you will need:\
+10x Bone\
+<Main/@main>
+
+[@WhiteThread]
+To craft this item you will need:\
+10x SpiderWeb\
+1x Mushroom\
+<Main/@main>
+
+[@RedThread]
+To craft this item you will need:\
+10x SpiderWeb\
+1x CannibalFruit\
+<Main/@main>
+
+[@BlackThread]
+To craft this item you will need:\
+10x SpiderWeb\
+1x BugShell\
+<Main/@main>
+
+
+[goods]
+;; by @makefood
+Dumpling          200    1
+BeefDumpling      200    1
+ChickenDumplng    200    1
+EggDumpling       200    1
+BoneDumpling      200    1
+HerbalTea         200    1
+MeatSoup          200    1
+ZerkSoup          200    1
+ChickenBroth      200    1
+EggBroth          200    1
+BoneBroth         200    1
+CaniblFruitTea    200    1
+
+;; by @makepotion
+(HP)DrugXL        200    1
+(MP)DrugXL        200    1
+(HP)DrugBundXL    200    1
+(MP)DrugBundXL    200    1
+
+;; by @makegem
+BraveryGem        200    1
+MagicGem          200    1
+SoulGem           200    1
+ProtectionGem     200    1
+EvilSlayerGem     200    1
+DurabilityGem     200    1
+StormGem          200    1
+AgilityGem        200    1
+AccuracyGem       200    1
+PoisonGem         200    1
+FreezingGem       200    1
+DisillusionGem    200    1
+EnduranceGem      200    1
+
+;; by @makeitem
+PeddlerTorch      200    1
+SewingGoods       200    1
+BoneHammer        200    1
+String            200    1
+
+;; by @makeetc
+BoneDecapitatr    200    1
+BoneHood          200    1
+BoneRobe(M)       200    1
+BoneRobe(F)       200    1
+BugNecklace       200    1
+BugRing           200    1
+BugBracelet       200    1
+WhiteGoldBelt     200    1
+WhiteGoldShoes    200    1
+WhiteGoldNeckl    200    1
+WhiteGoldBrace    200    1
+WhiteGoldRing     200    1
+RedJadeBelt       200    1
+RedJadeShoes      200    1
+RedJadeNeckl      200    1
+RedJadeBrace      200    1
+RedJadeRing       200    1
+NephriteBelt      200    1
+NephriteShoes     200    1
+NephriteNeckl     200    1
+NephriteBrace     200    1
+NephriteRing      200    1
+WhiteGldBlt(H)    200    1
+WhitGldShoe(H)    200    1
+WhiteGldNec(H)    200    1
+WhiteGldBra(H)    200    1
+WhiteGldRng(H)    200    1
+RedJadeBelt(H)    200    1
+RedJadeShoe(H)    200    1
+RedJadeNeck(H)    200    1
+RedJadeBrac(H)    200    1
+RedJadeRing(H)    200    1
+NephritBelt(H)    200    1
+NephritShoe(H)    200    1
+NephritNeck(H)    200    1
+NephritBrac(H)    200    1
+NephritRing(H)    200    1
+
+;; by @makestuff
+LargeBone         200    1
+WhiteThread       200    1
+RedThread         200    1
+BlackThread       200    1

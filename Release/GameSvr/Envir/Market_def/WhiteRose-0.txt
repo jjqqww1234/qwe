@@ -1,0 +1,18 @@
+; ===================================
+; Npc Def NPC File : WhiteRose-0
+; 
+; -----------------------------------
+; Name: WhiteRose
+; Job: 
+; Map No: 0
+; Pos X 
+; Pos Y 
+; File name: *removed*
+; Comment: 
+
+;================================================= =
+;
+
+[@main]
+#SAY
+EVENT NIGHTROSE

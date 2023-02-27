@@ -1,0 +1,58 @@
+; ===================================
+; Market Def NPC File : 8AStn-3
+; 
+; -----------------------------------
+; Name: Jeweler
+; Job: 
+; Map No: 3
+; Pos X 678
+; Pos Y 292
+; File name: *removed*
+; Comment: SabukWall
+
+;================================================= =
+;
+
+;Settings
+%100
++
++
+
+;Pkr Tag (NPC won't talk to Pkrs)
+[@main]
+#IF
+checkpkpoint 2
+#SAY
+I will not help such an evil person like you..\ \
+<close/@exit>
+
+#ELSEACT
+goto @main-1
+
+
+[@main-1]
+If there is any unused bonus stone left,\
+I will buy it. I will pay you a lot, if the stone\
+is rare and precious.\ \ 
+<sell/@sell>\
+<talk/@talk>\
+
+[@sell]
+Which bonus stone do you want to sell?\ \
+<back/@main>
+
+[@talk]
+A bonus stone prossesses special force and it protects\
+the person, who has it. It looks like a normal gem stone\
+but there are some magical powers in it.\ \
+<next/@next>\
+
+[@next]
+There is no fixed form or shape for a bonus stone.\
+Some are natural as they are while others have more power\
+with cutting and processing.\ \
+<close/@exit>
+
+
+[goods]
+;Item		Amount		Time

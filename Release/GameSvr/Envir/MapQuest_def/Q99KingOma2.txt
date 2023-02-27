@@ -1,0 +1,100 @@
+; QGO Easter Event 2003
+; 9 Apr 2003 King Oma boss mob function Level 2 band (24 - 33)
+
+[@main]
+
+#IF
+;anticht check
+check [786] 1
+check [755] 1
+
+#ACT
+SET [755] 0
+SET [785] 0
+SET [786] 0
+
+goto @check1
+
+#ELSEACT
+;flags not set, illegal entry
+map B240
+
+[@check1]
+#IF
+checkjob warrior
+#ACT
+goto @wargift
+break
+
+#IF
+checkjob wizard
+#ACT
+goto @wizgift
+break
+
+#IF
+checkjob taoist
+#ACT
+goto @taogift
+break
+
+goto @kill_player
+
+[@wargift]
+; check for gender
+#IF
+gender man
+
+#ACT
+goto @warman
+
+#ELSEACT
+goto @warwoman
+
+
+[@warman]
+#ACT
+give OmaArmour(M) 1
+give SunPotion(M) 2
+goto @kill_player
+
+
+[@warwoman]
+#ACT
+give OmaArmour(F) 1
+give SunPotion(M) 2
+goto @kill_player
+
+
+[@wizgift]
+#ACT
+give OmaRing 1
+give SunPotion(M) 2
+goto @kill_player
+
+
+[@taogift]
+#ACT
+give OmaPipe 1
+
+goto @kill_player
+
+
+[@kill_player]
+
+#Say
+Not bad Mortal..  I hope we can Battle again\
+in the next plane of Existence!!\ \ \
+Until then I will leave you with this gift in\
+recognition of your Prowess.\ \
+Enjoy it whilst you can...... Muahaahaahaa...\ \
+
+
+#ACT
+Param1 T239
+Param2 20
+Param3 20
+MonGen Lord6 50 10
+
+
+

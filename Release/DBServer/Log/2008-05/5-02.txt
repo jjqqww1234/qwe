@@ -1,0 +1,7 @@
+Server closed... 12:36:59 AM
+Server started.. 11:53:40 AM
+H-QyChr=0 H-NwChr=0 H-DlChr=0 Dubl-Sl=0 P1=0 P2=0 P3=0 P4=0 P5=0 11:53:41 AM
+Server closed... 12:17:15 PM
+Server started.. 3:10:14 PM
+H-QyChr=0 H-NwChr=0 H-DlChr=0 Dubl-Sl=0 P1=0 P2=0 P3=0 P4=0 P5=0 3:10:14 PM
+Server closed... 5:34:43 PM

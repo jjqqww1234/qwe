@@ -1,0 +1,41 @@
+; ===================================
+; Npc Def NPC File : NewNpc1-0
+; 
+; -----------------------------------
+; Name: 
+; Job: 
+; Map No: 0
+; Pos X 341
+; Pos Y 258
+; File name: *removed*
+; Comment: this is the start npc to enter the new hell map cave
+
+;================================================= =
+;
+
+[@main]
+#SAY
+Hello Would you like to buy a HellNecklace\
+and you have to be lvl 45 to enter.\ \
+<Yes/@next>  <No/@exit>
+
+[@next]
+#SAY
+The HellNecklace will cost 10,000 Gold.\
+<Buy HellNecklace/@next2>  <No Thanks/@exit>
+
+[@next2]
+#IF
+checkgold 10000
+#ACT
+take gold 10000
+give HellNecklace 1
+#SAY
+Here is the HellNecklace please take it\
+to my other brother in HellVillage at (246:144)\ \
+<OK/@exit>
+
+#ELSESAY
+I'm sorry but you don't have enough gold.\
+Please come back to me when you do.\ \
+<OK/@exit>

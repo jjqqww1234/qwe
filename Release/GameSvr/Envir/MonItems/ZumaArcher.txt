@@ -1,0 +1,64 @@
+1/5  Gold  450
+1/25  (HP)DrugLarge
+1/40  (MP)DrugLarge
+1/50  SunPotion
+
+1/30000   StaminaAid
+1/30000   MagicAid
+1/30000   StormDrug
+
+1/9600   ConvexLens
+
+1/4800   BambooPipe
+1/4800   ShamanHelmet
+1/4800   PurifierSword
+1/9600   CoralRing
+1/4800   ExpelRing
+
+1/7200   SkeletonHelmet
+1/7200   DeathGauntlet
+1/7200   PowerAxe
+
+1/2400   HeavyArmor(M)
+1/2400   HeavyArmor(F)
+1/2400   SoulArmor(F)
+1/2400   SoulArmor(M)
+1/2400   MagicRobe(M)
+1/2400   MagicRobe(F)
+1/2400   GoldRing
+1/2400   BlueJadeNeckl
+1/2400   GoldBracelet
+1/2400   MoralRing
+1/2400   CharmRing
+
+1/1200   MonkBracelet
+1/1200   EbonyBracelet
+1/1200   KrissSword
+1/1200   BlackRing
+1/1200   SerpentEyeRing
+1/1200   PearlRing
+1/1200   PrinceSword
+1/1200   MartialSword
+1/1200   HoockedSpear
+1/1200   IronRing
+1/1200   TigerNecklace
+1/1200   PlatinNecklace
+1/1200   SkeletonRing
+1/1200   StrainBracelet
+
+1/500   HoockedSword
+1/500   Scimitar
+1/500   Trident
+1/500   SteelSword
+1/500   BlueRing
+1/500   NagaNecklace
+1/500   AmberNecklace
+1/500   PhoenixBead
+1/500   HardGlove
+1/500   MagicBracelet
+1/500   LanternNeckl
+
+;;From Korea:6month_PatchOne
+1/30000   DragonRobe(M)
+1/30000   DragonRobe(F)
+1/70000   ZumaSSpringWnd

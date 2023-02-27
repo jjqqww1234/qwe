@@ -1,0 +1,52 @@
+; ===================================
+; Market Def NPC File : 7Hvst-hell00
+; 
+; -----------------------------------
+; Name: Jack
+; Job: 
+; Map No: hell00
+; Pos X 48
+; Pos Y 237
+; File name: *removed*
+; Comment: 
+
+;================================================= =
+;
+
+;Settings
+%100
++0
++42
++30
++3
+
+[@main]
+Hmmmm, You need to have many useful items\
+while exploring. Dangerous places. Have a look.\
+Take your time. Of caurse, they are not free.\ \
+<buy/@buy>\
+<sell/@sell>\
+<close/@exit>
+
+[@buy]
+What do you want to buy?\ \
+<back/@main>
+
+
+[@sell]
+What do you want to sell?\ \
+<back/@main>
+
+[goods]
+;Item		Amount		Time
+Candle			200	1
+Torch			200	1
+DungeonEscape		200	1
+RandomTeleport		200	1
+TownTeleport            200     1
+EscapeBundl		200	1
+RandomBundl		200	1
+TownTeBundl             200     1
+Amulet			200	1
+Amulet(M)		200	1
+RepairOil		200	1

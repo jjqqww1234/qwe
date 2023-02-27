@@ -1,0 +1,61 @@
+[@main]
+#IF 
+checklevel 10
+
+#ACT 
+goto @check17
+#ELSESAY 
+I'm sorry, but the task I wish to offer you\
+is too dangerous for someone of your skill level.\
+I suggest you to train more and come back to me.\
+
+[@Check17] 
+#IF 
+checklevel 17 
+#ACT 
+goto @toohigh 
+#ELSEACT
+goto @who
+
+[@who]
+#IF
+checkhum F003 50
+#SAY
+Sorry you will have to wait a little... \
+There are already too much people trying \
+my arena...\ \
+#ELSEACT
+breaktimerecall 
+goto @main_1 
+
+[@toohigh] 
+Sorry,\
+We only have challenges for lesser trained heroes.\
+Go and find my Big Brother,\
+he will probably have a challenge for you.\\
+<Cya later/@exit>
+
+[@main_1] 
+Welcome, i see you have heard my advertisement that has \
+been circulating, and that you are here for my challenges.\
+I think with your skill and the help of others,\
+You can take this challenge.\
+Make sure you are completely prepared to enter my arena.\
+As great Danger awaits you.\
+
+<next/@next> 
+
+[@next] 
+Are you sure you are completely ready, I will let you enter.\
+You can stay in there for a period of 2 hours.\
+If you want to leave earlier, take a dungeon escape with you.\
+I wish you good luck and hope to see you here again.\
+
+<Yes I'm ready/@tele> \
+<I'm not ready yet/@exit> 
+
+[@tele] 
+#IF
+#ACT
+TimeRecall 120 
+map F003

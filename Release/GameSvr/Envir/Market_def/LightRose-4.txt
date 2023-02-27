@@ -1,0 +1,57 @@
+; ===================================
+; Npc Def NPC File : LightRose-4
+; 
+; -----------------------------------
+; Name: LightRose
+; Job: 
+; Map No: 4
+; Pos X 
+; Pos Y 
+; File name: *removed*
+; Comment: 
+
+;================================================= =
+;
+
+[@main]
+#SAY
+Hi my name is Light Rose of charming Rose Family.\
+I came here to celebrate Legend of Mir2 5th year anniversary.\
+Why aren't I inside the wall enjoying the festivals with everyone else\
+you ask?\ Well thats is because I have a special gift for people during\
+this event.\ \
+<More@next1>
+
+[@next1]
+#SAY
+If i stand inside the wall and give out these special gifts the Guards\
+around the town may get confused and destroy them.\ \
+My special gift is for a small price of <$50,000> gold I will cast\
+you an exact clone of yourself to help you hunt monsters.\
+Would you like a clone?\
+<Pay/@recall> 50,000 gold and receive clone.
+
+[@recall]
+#IF
+CHECKSLAVECOUNT > 0
+#SAY
+Oh, for some reason i can not cast your a clone.\
+Maybe you already have a helper?\ \
+<Close/@exit>
+#ELSEACT
+goto @checkgold
+break
+
+[@checkgold]
+#IF
+CHECKGOLD 50000
+#ACT
+RECALLCLONE Clone2 1 50
+#SAY
+Here we are, a brand new clone of yourself. Thank you for participating.\
+in the event. I hope you enjoy yourself.\ \
+<Close/@exit>
+#ELSESAY
+It seemse you do not have the enough Gold for me to do that.\
+Come back anytime you have enough gold.\ \
+<Close/@exit>

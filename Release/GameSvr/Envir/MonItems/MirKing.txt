@@ -1,0 +1,55 @@
+1/1 gold 2000 
+1/1 gold 2000 
+1/1 gold 2000 
+1/1 gold 2000 
+1/1 gold 2000 
+1/1 gold 2000 
+
+1/200 MageStaff 
+1/200 GreatAxe 
+1/200 SerpentSword 
+1/360 DragonSword 
+
+1/6 FlamingSword 
+1/6 SummonShinsu 
+1/6 IceStorm 
+
+1/3 CoralRing 
+1/3 ExpelRing 
+1/18 PlatinumRing 
+1/18 RubyRing 
+1/18 DragonRing 
+1/12 GaleRing 
+
+1/12 LifeNecklace 
+
+1/18 SpellBracelet 
+1/18 3rdEyeBracelet 
+
+1/200 JudgementMace 
+1/200 SoulSpringWand 
+1/200 BloodSword 
+1/200 WarMageStaff 
+
+1/21 BlackIronHelm 
+
+1/24 PearlNecklace 
+
+1/30 PowerRing 
+1/30 VioletRing 
+1/30 TitanRing 
+1/30 RecoveryRing 
+1/30 FlameRing 
+
+1/30 SoulSpringBrac 
+1/30 KnighBracelet
+1/30 DragonBrace 
+
+1/400 DragonSlayer 
+1/400 SoulSabre 
+1/400 DragonStaff 
+
+1/36 GreenBead 
+1/36 SoulNecklace 
+1/36 DemonicBell 
+1/48 GaleNecklace 

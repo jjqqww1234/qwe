@@ -1,0 +1,101 @@
+; ===================================
+; Market Def NPC File : 8Mbr-0158
+; 
+; -----------------------------------
+; Name: Kelly
+; Job: 
+; Map No: 0158
+; Pos X 16
+; Pos Y 11
+; File name: *removed*
+; Comment: 
+
+;================================================= =
+;
+
+;Settings
+%100
++24
++26
+
+[@main]
+#IF
+checkpkpoint 2
+#SAY
+I will not help such an evil person like you..\ \
+<Ok/@exit>
+
+#ELSEACT
+goto @main-1
+
+
+[@main-1]
+Welcome. What can I do for you?\ \
+<Buy/@buy> bracelet\
+<Sell/@sell> bracelet\
+<Repair/@repair> bracelet\
+<Get/@Tmove> Out\
+<Cancel/@exit>
+
+
+
+[@Tmove]
+#IF
+random 5
+#ACT
+mapmove 3 300 294
+break
+
+#IF
+random 5
+#ACT
+mapmove 3 301 294
+break
+
+#IF
+random 5
+#ACT
+mapmove 3 301 293
+break
+
+#IF
+random 5
+#ACT
+mapmove 3 291 303
+break
+
+#IF
+random 5
+#ACT
+mapmove 3 290 303
+break
+
+#ELSEACT
+goto @Tmove
+
+[@buy]
+Would you like to buy a bracelet?\ \ \
+<Back/@main>
+
+[@sell]
+What kind of bracelet would you like to sell.\ \ \
+<Back/@main>
+
+[@repair]
+Would you like to repair necklace.\ \ \
+<Back/@main>
+
+[~@repair]
+Your bracelet seems repaired fine.\ \
+ <Back/@main>
+
+[goods]
+;Item		Amount		Time
+ThinBracelet		200	1
+SilverBracelet		200	1
+IronBracer		200	1
+LargeBracelet		200	1
+SteelBracelet		200	1
+MonkBracelet		200	1
+EbonyBracelet		200	1
+MagicBracelet		200	1

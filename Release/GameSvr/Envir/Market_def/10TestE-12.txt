@@ -1,0 +1,80 @@
+[@main] 
+#ACT 
+breaktimerecall 
+reset [697]
+reset [698]
+reset [699]
+goto @main_1 
+
+[@main_1] 
+Watch out, \ 
+You are approaching a gateway between evil powers and the normal world. \ 
+Last year i was also here, and before i knew i was somewhere else. \ 
+A place full of terror and evil monsters, \ 
+i ran for my life. \ 
+There were loads of evil beast running after me. \ 
+I found a deep small corner where i could hide myself \ 
+and where those evil creatures couldn't reach me. \\ 
+<Next/@next> 
+
+[@next] 
+If you want to proceed walking around here, \ 
+it's your choice, but don't say i didn't warned you.\\ 
+
+<Thanks for your advice,i will leave now/@leave> \ 
+<Don't tell me what i should do or shouldn't do/@goFurther> 
+
+[@leave] 
+#IF
+#ACT 
+map 2
+
+[@goFurther]
+#IF
+checklevel 30
+#ACT
+goto @goFurther_1
+#ELSESAY
+sorry but you are too young\
+for an hard place like that\\
+
+
+[@goFurther_1] 
+#IF 
+checkhum f005 20 
+#SAY 
+I wish you all the best, \ 
+I hope nothing bad happens to you as happenned to me. \ 
+#ACT 
+goto @exit
+
+#ELSEACT 
+goto @random
+
+[@random]
+#IF 
+random 3 
+#ACT 
+set [697] 1
+TimeRecall 90 
+map f005 
+Break
+
+#IF 
+random 3 
+#ACT 
+set [698] 1
+TimeRecall 90 
+map f005 
+break
+
+#IF
+random 3
+#ACT 
+set [699] 1
+TimeRecall 90 
+map f005
+break
+
+#ELSEACT
+goto @random

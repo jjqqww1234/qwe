@@ -1,0 +1,62 @@
+1/1   Gold 1500
+
+1/1    SunPotion(M)
+1/1    SunPotion(M)
+1/1    SunPotion(M)
+1/1    SunPotion(M)
+1/1    SunPotion(M)
+1/1    SunPotion(M)
+1/2    SunPotion(M)
+1/2    SunPotion(M)
+1/1    (HP)DrugLarge
+1/1    (HP)DrugLarge
+1/2    (HP)DrugLarge
+1/2    (HP)DrugLarge
+1/1    (MP)DrugLarge
+1/1    (MP)DrugLarge
+1/2    (MP)DrugLarge
+1/2    (MP)DrugLarge
+
+1/20    Benedictionoil
+1/20    BenedictionOil
+1/60    BlackIronHelm
+1/60 	 CharmRing
+1/60 	 GaleRing
+1/60 	 BambooPipe
+1/60 	 ConvexLens
+1/60	 KnightBracelet
+1/60     StrainBracelet
+
+1/60     GreenBead
+1/60     GaleNecklace
+1/60    SoulNecklace
+1/60    DemonicBell
+
+1/150   RecallNecklace
+1/150   RecallHelmet
+1/4000    RecallRing
+1/4000    RecallBracelet
+
+1/120     GreatAxe
+1/200000   TeleportRing
+
+
+1/240    JudgementMace
+1/240   DragonSword
+1/120   DragonSlayer
+1/120   WarmageStaff
+1/100    SoulSpringWand
+1/120   SoulSabre
+1/100	BloodSword
+
+1/70    PowerRing
+1/70    VioletRing
+1/70    TitanRing
+
+
+;;From Korea:6month_PatchOne
+1/5   WizardRobe(M)
+1/5   WizardRobe(F)
+1/500   DragonRobe(M)
+1/500   DragonRobe(F)
+1/30   SteelHelmet

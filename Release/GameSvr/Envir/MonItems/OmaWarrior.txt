@@ -1,0 +1,71 @@
+1/1   Gold 200
+
+1/1    SunPotion(M)
+1/1    SunPotion(M)
+1/2    SunPotion(M)
+1/2    SunPotion(M)
+1/2    SunPotion(M)
+1/1    SunPotion
+1/1    SunPotion
+1/1    SunPotion
+1/1    SunPotion
+1/1    SunPotion
+1/2    SunPotion
+1/2    SunPotion
+1/2    SunPotion
+1/1    (HP)DrugMedium
+1/1    (HP)DrugMedium
+1/1    (HP)DrugMedium
+1/2    (HP)DrugMedium
+1/2    (HP)DrugMedium
+1/1    (MP)DrugMedium
+1/1    (MP)DrugMedium
+1/1    (MP)DrugMedium
+1/2    (MP)DrugMedium
+1/2    (MP)DrugMedium
+
+1/40   ImpactDrug
+1/40   ImpactDrug
+1/40   ImpactDrug
+
+1/15   HoockedSword
+1/15   Scimitar
+1/15   Trident
+1/15   SteelSword
+1/15   BlueRing
+1/15   NagaNecklace
+1/15   AmberNecklace
+1/15   PhoenixBead
+1/15   HardGlove
+1/15   MagicBracelet
+1/15   LanternNeckl
+
+1/8   IronSword
+1/8   ShortSword
+1/8   BronzeHelmet
+1/8   BronzeAxe
+1/8   EbonyNecklace
+1/8   YellowNecklace
+1/8   BlackNecklace
+1/8   MagicHelmet
+
+1/4   BronzeSword
+1/4   ThinBracelet
+1/4   GlassRing
+1/4   HexagonalRing
+1/4   LeatherGlove
+1/4   SilverBracelet
+1/4   SteelBracelet
+1/4   HornRing
+1/4   LargeBracelet
+
+1/4   GreatFball
+1/4   SummonSkel
+1/4   Teleport
+1/4   SoulFireball
+1/4   Thunderbolt
+1/4   Hellfire
+1/4   ElecShock
+
+;;From Korea:6month_PatchOne
+1/20   SteelAxe

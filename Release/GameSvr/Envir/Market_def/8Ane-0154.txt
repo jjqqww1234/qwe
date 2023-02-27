@@ -1,0 +1,73 @@
+; ===================================
+; Market Def NPC File : 8Ane-0154
+; 
+; -----------------------------------
+; Name: Sarah
+; Job: 
+; Map No: 0154
+; Pos X 3
+; Pos Y 18
+; File name: *removed*
+; Comment: 
+
+;================================================= =
+;
+
+;Settings
+%100
++20
++19
++21
+
+;Pkr Tag (NPC won't talk to Pkrs)
+[@main]
+#IF
+checkpkpoint 2
+#SAY
+I will not help such an evil person like you..\ \
+<Cancel/@exit>
+
+#ELSEACT
+goto @main-1
+
+[@main-1]
+Please kindly buy necklace.\
+When I am out of my sence, items could sell low price\
+Oh, you are a <$OWNERGUILD>'s member, aren't you?\
+then I shall offer a killing price, a discount of 20 percent,\
+How about that?\ \
+<Buy/@buy> or <Sell/@sell> necklace\
+<Repair/@repair> necklace\
+<Cancel/@exit>
+
+[@buy]
+We have all kinds of necklace.\
+but, except for just what we don't have\ \ \
+<Back/@main>
+
+[@sell]
+Will you give me a necklace? oh, you want to sell it, don't you?\ \ \
+<Back/@main>
+
+[@repair]
+You want to repair necklace? Why don'y you buy new one...\ \ \
+<Back/@main>
+
+[~@repair]
+Your necklace seems repaired fine.\ \
+<Back/@main>
+
+[goods]
+;Item		Amount		Time
+GoldNecklace		200	1
+AmberNecklace		200	1
+YellowNecklace		200	1
+EbonyNecklace		200	1
+BlackNecklace		200	1
+WarriorNecklce		200	1
+JadeNecklace		200	1
+LanternNeckl		200	1
+NagaNecklace		200	1
+PhoenixBead		200	1
+PlatinNecklace		200	1
+

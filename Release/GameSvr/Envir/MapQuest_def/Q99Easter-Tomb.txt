@@ -1,0 +1,53 @@
+;
+;QGO Easter 2003 Quest v0.2
+;
+;Controls Access to Oma's Tomb.
+;Only Allows Players With:-
+;
+;PK points < 2 and Holding " E A S T E R "
+;
+;v0.1 Added Hold on door pending event
+;v0.2 Checks for  EASTER Removes them and allows through. -Not working yet!
+
+[@main]
+
+#IF
+; QGO added checkflag for 755 - set by admin
+check [755] 1
+checkitem E 2
+checkitem A 1
+checkitem S 1
+checkitem T 1
+checkitem R 1
+
+#ACT
+take E 40
+take A 40
+take S 40
+take T 40
+take R 40
+
+; clear the flags for the letters
+SET [775] 0
+SET [776] 0
+SET [777] 0
+SET [778] 0
+SET [779] 0
+SET [780] 0
+; and clear the main quest flag
+SET [770] 0
+
+; set the entry flag 771 to be OK to go in
+SET [771] 1
+TimeRecall 90
+
+
+#ElSEACT
+SET [771] 0
+SET [786] 0
+goto @noentry1
+
+[@noentry1]
+Entry to this Tomb has been restricted.\
+BY ORDER of the Bichon Wall Administration\
+Department!\ \

@@ -1,0 +1,65 @@
+; ===================================
+; Market Def NPC File : 3Wdr-1003
+; (TaoVillage)
+; -----------------------------------
+; Name: Sam
+; Job: 
+; Map No: 1003
+; Pos X 13
+; Pos Y 16
+; File name: *removed*
+; Comment: (TaoVillage)
+
+;================================================= =
+;
+
+;Settings
+%100
++10
++11
++15
+
+;Clothes Store
+[@main]
+I was here to learn martial arts skills but I have practiced\
+laundering and sewing instead of martial art skills.\
+It's not bad as I made money with selling extra clothing and\
+charging for repairs. Well, what do you want?\ \
+<Buy/@buy> Armour.\
+<Sell/@sell> Armour.\
+<Repair/@repair> Armour.\
+<Cancel/@exit>
+
+[@buy]
+What item do you want to buy?\ \ \
+<Back/@main>
+
+[@sell]
+Show me your clothes to be sold. I'll give you an appraisement.\
+We also trade Helmets.\
+So if you like my store please sell them to me.\ \
+<Back/@main>
+
+[@repair]
+You can repair clothes and Helmets here.\ \ \
+<Back/@main>
+
+[~@repair]
+It seems repaired fine.\ \ \
+<Back/@main>
+
+[goods]
+;Item		Amount		Time
+BaseDress(M)		100	1	
+BaseDress(F)		100	1
+LightArmor(M)		100	1
+LightArmor(F)		100	1
+HeavyArmor(M)		100	1
+HeavyArmor(F)		100	1
+SoulArmor(M)		100	1
+SoulArmor(F)		100	1
+MagicRobe(M)		100	1
+MagicRobe(F)		100	1
+BronzeHelmet		100	1
+MagicHelmet		100	1
+BrassHelmet		100	1

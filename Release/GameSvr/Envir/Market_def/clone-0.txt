@@ -1,0 +1,138 @@
+; ===================================
+; Market Def NPC File : Clone-0
+; 
+; -----------------------------------
+; Name: BlackRose
+; Job: 
+; Map No: 0
+; Pos X 268
+; Pos Y 
+; File name: *removed*
+; Comment: Clone rental service
+
+;================================================= =
+;
+
+[@main]
+#SAY
+We Have prepared a Clone Event for you to enjoy.\
+You just need to pay a rental\
+then will have your clone character.\
+The clone character's ability depends on your Lv.\
+Do you want to use it?\ \
+<Yes, I want/@next>\
+<No. thanks/@exit>
+
+[@next]
+#SAY
+Only one clone character is available for one player.\
+The clone character will disappear when its strength\
+runs out of player logs out the game world.\
+If you are a wizard with 5 tamed mobs and rent\
+a clone character, tamed mobs or clone\
+Do you want to use it?\ \
+<Yes, I want/@level1>\
+<No. thanks/@exit>
+
+[@level1]
+#IF
+checklevel 20
+goto @level20
+#ELSESAY
+Clone character will have <$USERNAME>'s image.\
+But its ability won't be the same as yours.\
+Clone character do not have a distance attack, only a melee attack.\
+It seems you will have an low level clone character.\
+But you must pay 20,000 gold.\ \
+<Pay 20,000 gold./@pay20>\
+<No, I don't want./@exit>
+
+[@level20]
+#IF
+checklevel 30
+goto @level30
+#ELSESAY
+Clone character will have <$USERNAME>'s image.\
+But its ability won't be the same as yours.\
+Clone character do not have a distance attack, only a melee attack.\
+It seems you will have an medium level clone character.\
+But you must pay 30,000 gold.\ \
+<Pay 30,000 gold./@pay30>\
+<No, I don't want./@exit>
+
+[@level30]
+#IF
+checklevel 40
+goto @level40
+#ELSESAY
+Clone character will have <$USERNAME>'s image.\
+But its ability won't be the same as yours.\
+Clone character do not have a distance attack, only a melee attack.\
+It seems you will have an low level clone character.\
+But you must pay 40,000 gold.\ \
+<Pay 40,000 gold./@pay40>\
+<No, I don't want./@exit>
+
+
+[@level40]
+#SAY
+Clone character will have <$USERNAME>'s image.\
+But its ability won't be the same as yours.\
+Clone character do not have a distance attack, only a melee attack.\
+It seems you will have an unbelievable clone character.\
+But you must pay 50,000 gold.\ \
+<Pay 50,000 gold./@pay50>\
+<No, I don't want./@exit>
+
+
+[@level40]
+#SAY
+Clone character will have <$USERNAME>'s image.\
+But its ability won't be the same as yours.\
+Clone character do not have a distance attack, only a melee attack.\
+It seems you will have an ubelievable clone character.\
+But you must pay 50,000 gold.\ \
+<Pay 50,000 gold./@pay>\
+<No, I don't want./@exit>
+
+
+[@pay20]
+#IF
+checkgold 20000
+#ACT
+recallmob Clone1  
+#ELSESAY
+I'm sorry but you lack the funds to rent\
+out a clone character.\ 
+<Close/@exit>
+
+[@pay30]
+#IF
+checkgold 30000
+#ACT
+recallmob Clone2  
+#ELSESAY  
+I'm sorry but you lack the funds to rent\
+out a clone character.\ 
+<Close/@exit> 
+
+[@pay40]
+#IF
+checkgold 40000
+#ACT
+recallmob Clone3
+#ELSESAY  
+I'm sorry but you lack the funds to rent\
+out a clone character.\ 
+<Close/@exit> 
+
+[@pay50]
+#IF
+checkgold 50000
+#ACT
+recallmob Clone4 
+#ELSESAY 
+I'm sorry but you lack the funds to rent\
+out a clone character.\ 
+<Close/@exit>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
